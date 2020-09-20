@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		AB26B0782517DD550030D44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB26B0762517DD550030D44A /* Main.storyboard */; };
 		AB26B07A2517DD560030D44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB26B0792517DD560030D44A /* Assets.xcassets */; };
 		AB26B07D2517DD560030D44A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB26B07B2517DD560030D44A /* LaunchScreen.storyboard */; };
+		ABB787FC2517DE8300671AB9 /* PokeBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB787FB2517DE8300671AB9 /* PokeBank.swift */; };
+		ABB787FF2517DEAC00671AB9 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB787FE2517DEAC00671AB9 /* Pokemon.swift */; };
+		ABB788022517DF5400671AB9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ABB788012517DF5400671AB9 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		AB26B0792517DD560030D44A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB26B07C2517DD560030D44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB26B07E2517DD560030D44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABB787FB2517DE8300671AB9 /* PokeBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeBank.swift; sourceTree = "<group>"; };
+		ABB787FE2517DEAC00671AB9 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB788022517DF5400671AB9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +62,8 @@
 		AB26B06F2517DD550030D44A /* PokemonXYiOS */ = {
 			isa = PBXGroup;
 			children = (
+				ABB787FD2517DE9800671AB9 /* Model */,
+				ABB787FA2517DE3500671AB9 /* Pokebank */,
 				AB26B0702517DD550030D44A /* AppDelegate.swift */,
 				AB26B0722517DD550030D44A /* SceneDelegate.swift */,
 				AB26B0742517DD550030D44A /* ViewController.swift */,
@@ -65,6 +73,22 @@
 				AB26B07E2517DD560030D44A /* Info.plist */,
 			);
 			path = PokemonXYiOS;
+			sourceTree = "<group>";
+		};
+		ABB787FA2517DE3500671AB9 /* Pokebank */ = {
+			isa = PBXGroup;
+			children = (
+				ABB787FB2517DE8300671AB9 /* PokeBank.swift */,
+			);
+			path = Pokebank;
+			sourceTree = "<group>";
+		};
+		ABB787FD2517DE9800671AB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABB787FE2517DEAC00671AB9 /* Pokemon.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +107,9 @@
 			dependencies = (
 			);
 			name = PokemonXYiOS;
+			packageProductDependencies = (
+				ABB788012517DF5400671AB9 /* Alamofire */,
+			);
 			productName = PokemonXYiOS;
 			productReference = AB26B06D2517DD550030D44A /* PokemonXYiOS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +138,9 @@
 				Base,
 			);
 			mainGroup = AB26B0642517DD550030D44A;
+			packageReferences = (
+				ABB788002517DF5400671AB9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = AB26B06E2517DD550030D44A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +168,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB787FF2517DEAC00671AB9 /* Pokemon.swift in Sources */,
+				ABB787FC2517DE8300671AB9 /* PokeBank.swift in Sources */,
 				AB26B0752517DD550030D44A /* ViewController.swift in Sources */,
 				AB26B0712517DD550030D44A /* AppDelegate.swift in Sources */,
 				AB26B0732517DD550030D44A /* SceneDelegate.swift in Sources */,
@@ -336,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ABB788002517DF5400671AB9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ABB788012517DF5400671AB9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABB788002517DF5400671AB9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB26B0652517DD550030D44A /* Project object */;
 }

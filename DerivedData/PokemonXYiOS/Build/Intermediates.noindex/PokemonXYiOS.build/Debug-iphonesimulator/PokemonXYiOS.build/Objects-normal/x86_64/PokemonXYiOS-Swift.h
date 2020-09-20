@@ -232,6 +232,8 @@ SWIFT_CLASS("_TtC12PokemonXYiOS13SceneDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+
 @class NSBundle;
 @class NSCoder;
 
