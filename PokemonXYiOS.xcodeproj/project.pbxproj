@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03662F3D19DC9FACD8A9A2D6 /* Pods_PokemonXYiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CD755E35529A8ECDD9899C /* Pods_PokemonXYiOS.framework */; };
 		AB26B0712517DD550030D44A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB26B0702517DD550030D44A /* AppDelegate.swift */; };
 		AB26B0732517DD550030D44A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB26B0722517DD550030D44A /* SceneDelegate.swift */; };
 		AB26B0752517DD550030D44A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB26B0742517DD550030D44A /* ViewController.swift */; };
@@ -15,10 +16,12 @@
 		AB26B07D2517DD560030D44A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB26B07B2517DD560030D44A /* LaunchScreen.storyboard */; };
 		ABB787FC2517DE8300671AB9 /* PokeBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB787FB2517DE8300671AB9 /* PokeBank.swift */; };
 		ABB787FF2517DEAC00671AB9 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB787FE2517DEAC00671AB9 /* Pokemon.swift */; };
-		ABB788022517DF5400671AB9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ABB788012517DF5400671AB9 /* Alamofire */; };
+		ABB788022517DF5400671AB9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = ABB788012517DF5400671AB9 /* SwiftPackageProductDependency */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28FE8DA1CE21D379F14F09CE /* Pods-PokemonXYiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonXYiOS.release.xcconfig"; path = "Target Support Files/Pods-PokemonXYiOS/Pods-PokemonXYiOS.release.xcconfig"; sourceTree = "<group>"; };
+		513F1B72FAB8D9A55AB5936D /* Pods-PokemonXYiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonXYiOS.debug.xcconfig"; path = "Target Support Files/Pods-PokemonXYiOS/Pods-PokemonXYiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		AB26B06D2517DD550030D44A /* PokemonXYiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonXYiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB26B0702517DD550030D44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB26B0722517DD550030D44A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		AB26B07E2517DD560030D44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABB787FB2517DE8300671AB9 /* PokeBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeBank.swift; sourceTree = "<group>"; };
 		ABB787FE2517DEAC00671AB9 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		C4CD755E35529A8ECDD9899C /* Pods_PokemonXYiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokemonXYiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,18 +40,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABB788022517DF5400671AB9 /* Alamofire in Frameworks */,
+				ABB788022517DF5400671AB9 /* BuildFile in Frameworks */,
+				03662F3D19DC9FACD8A9A2D6 /* Pods_PokemonXYiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3905A83AC47A04574BE7242F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				513F1B72FAB8D9A55AB5936D /* Pods-PokemonXYiOS.debug.xcconfig */,
+				28FE8DA1CE21D379F14F09CE /* Pods-PokemonXYiOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		66D5C66B1F4C9599264D138D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4CD755E35529A8ECDD9899C /* Pods_PokemonXYiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB26B0642517DD550030D44A = {
 			isa = PBXGroup;
 			children = (
 				AB26B06F2517DD550030D44A /* PokemonXYiOS */,
 				AB26B06E2517DD550030D44A /* Products */,
+				3905A83AC47A04574BE7242F /* Pods */,
+				66D5C66B1F4C9599264D138D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB26B0812517DD560030D44A /* Build configuration list for PBXNativeTarget "PokemonXYiOS" */;
 			buildPhases = (
+				2BB7A4786D6D55C5AE7FDBEB /* [CP] Check Pods Manifest.lock */,
 				AB26B0692517DD550030D44A /* Sources */,
 				AB26B06A2517DD550030D44A /* Frameworks */,
 				AB26B06B2517DD550030D44A /* Resources */,
+				2FC50EDA464566F239CB456D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -108,7 +135,7 @@
 			);
 			name = PokemonXYiOS;
 			packageProductDependencies = (
-				ABB788012517DF5400671AB9 /* Alamofire */,
+				ABB788012517DF5400671AB9 /* SwiftPackageProductDependency */,
 			);
 			productName = PokemonXYiOS;
 			productReference = AB26B06D2517DD550030D44A /* PokemonXYiOS.app */;
@@ -139,7 +166,7 @@
 			);
 			mainGroup = AB26B0642517DD550030D44A;
 			packageReferences = (
-				ABB788002517DF5400671AB9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				ABB788002517DF5400671AB9 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = AB26B06E2517DD550030D44A /* Products */;
 			projectDirPath = "";
@@ -162,6 +189,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BB7A4786D6D55C5AE7FDBEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PokemonXYiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FC50EDA464566F239CB456D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PokemonXYiOS/Pods-PokemonXYiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PokemonXYiOS/Pods-PokemonXYiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PokemonXYiOS/Pods-PokemonXYiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB26B0692517DD550030D44A /* Sources */ = {
@@ -314,6 +383,7 @@
 		};
 		AB26B0822517DD560030D44A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 513F1B72FAB8D9A55AB5936D /* Pods-PokemonXYiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -331,6 +401,7 @@
 		};
 		AB26B0832517DD560030D44A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28FE8DA1CE21D379F14F09CE /* Pods-PokemonXYiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -370,7 +441,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ABB788002517DF5400671AB9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		ABB788002517DF5400671AB9 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
@@ -381,9 +452,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ABB788012517DF5400671AB9 /* Alamofire */ = {
+		ABB788012517DF5400671AB9 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ABB788002517DF5400671AB9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = ABB788002517DF5400671AB9 /* RemoteSwiftPackageReference */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */

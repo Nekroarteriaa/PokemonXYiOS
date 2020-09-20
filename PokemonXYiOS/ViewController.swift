@@ -8,16 +8,19 @@
 
 import UIKit
 import Alamofire
+import CCGradient
 
 class ViewController: UIViewController {
 
+   // @IBOutlet weak var gradientView: CCGradientView!
+    @IBOutlet weak var gradientView: CCGradientView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let color1 = UIColor().colorFromHex("F77A26")
-        let color2 = UIColor().colorFromHex("FB6A3D")
-        let color3 = UIColor().colorFromHex("C54216")
+        
+        gradientView.configuration = self
         
 
      
@@ -76,4 +79,34 @@ extension UIColor {
     }
 }
 
+extension UIColor {
+    convenience init(red: Int, green: Int, blue: Int) {
+        let newRed = CGFloat(red)/255
+        let newGreen = CGFloat(green)/255
+        let newBlue = CGFloat(blue)/255
+        
+        self.init(red: newRed, green: newGreen, blue: newBlue, alpha: 1.0)
+    }
+}
 
+
+extension ViewController: CCGradientViewConfiguration {
+    func configurationForGradientView(_ gradientView: CCGradientView) -> CCGradientConfiguration {
+        
+        let color4 = UIColor(red: 247, green: 122, blue: 38)
+        let color5 = UIColor(red: 251, green: 106, blue: 61)
+        let color6 = UIColor(red: 197, green: 66, blue: 22)
+        return CCGradientConfiguration(colors: [color4, color5, color6],
+                                       
+                                       type: CCGradientType.radial,
+                                       locations: [0.25, 0.75],
+                                       points: [CGPoint(x: 0.5, y: 0.55),
+                                                CGPoint(x: 1.5, y: 1)]
+                                       
+                                       
+                                       /*,
+                                       locations: [0.25,0.95,0.25],
+                                        points: [CGPoint(x: 0.5, y: 0.5),
+                                        CGPoint(x: 1, y: 1)]*/)
+    }
+}
