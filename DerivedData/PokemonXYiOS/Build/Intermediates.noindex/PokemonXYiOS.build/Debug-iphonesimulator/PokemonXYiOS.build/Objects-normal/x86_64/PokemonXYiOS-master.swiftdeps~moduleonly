@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "64569a568e714179351c57c52f76b34f"
+build_time: [1600628185, 999418000]
+inputs:
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/ViewController.swift": [1600628181, 838808345]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/AppDelegate.swift": [1600628181, 825604428]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/SceneDelegate.swift": [1600628181, 836176891]
