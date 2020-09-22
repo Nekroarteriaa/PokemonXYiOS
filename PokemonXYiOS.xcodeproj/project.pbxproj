@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03662F3D19DC9FACD8A9A2D6 /* Pods_PokemonXYiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CD755E35529A8ECDD9899C /* Pods_PokemonXYiOS.framework */; };
+		AB1E4DDD2518118800287D29 /* PokemonListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E4DDC2518118800287D29 /* PokemonListTableViewController.swift */; };
 		AB26B0712517DD550030D44A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB26B0702517DD550030D44A /* AppDelegate.swift */; };
 		AB26B0732517DD550030D44A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB26B0722517DD550030D44A /* SceneDelegate.swift */; };
 		AB26B0752517DD550030D44A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB26B0742517DD550030D44A /* ViewController.swift */; };
@@ -16,12 +17,15 @@
 		AB26B07D2517DD560030D44A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB26B07B2517DD560030D44A /* LaunchScreen.storyboard */; };
 		ABB787FC2517DE8300671AB9 /* PokeBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB787FB2517DE8300671AB9 /* PokeBank.swift */; };
 		ABB787FF2517DEAC00671AB9 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB787FE2517DEAC00671AB9 /* Pokemon.swift */; };
-		ABB788022517DF5400671AB9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = ABB788012517DF5400671AB9 /* SwiftPackageProductDependency */; };
+		ABB788022517DF5400671AB9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ABB788012517DF5400671AB9 /* Alamofire */; };
+		ABEC26D025195960001E40B0 /* PokemonIDCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEC26CF25195960001E40B0 /* PokemonIDCardTableViewCell.swift */; };
+		ABEC26D325196C8C001E40B0 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = ABEC26D225196C8C001E40B0 /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		28FE8DA1CE21D379F14F09CE /* Pods-PokemonXYiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonXYiOS.release.xcconfig"; path = "Target Support Files/Pods-PokemonXYiOS/Pods-PokemonXYiOS.release.xcconfig"; sourceTree = "<group>"; };
 		513F1B72FAB8D9A55AB5936D /* Pods-PokemonXYiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonXYiOS.debug.xcconfig"; path = "Target Support Files/Pods-PokemonXYiOS/Pods-PokemonXYiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AB1E4DDC2518118800287D29 /* PokemonListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListTableViewController.swift; sourceTree = "<group>"; };
 		AB26B06D2517DD550030D44A /* PokemonXYiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonXYiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB26B0702517DD550030D44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB26B0722517DD550030D44A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +36,7 @@
 		AB26B07E2517DD560030D44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABB787FB2517DE8300671AB9 /* PokeBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeBank.swift; sourceTree = "<group>"; };
 		ABB787FE2517DEAC00671AB9 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		ABEC26CF25195960001E40B0 /* PokemonIDCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonIDCardTableViewCell.swift; sourceTree = "<group>"; };
 		C4CD755E35529A8ECDD9899C /* Pods_PokemonXYiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokemonXYiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -40,8 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABB788022517DF5400671AB9 /* BuildFile in Frameworks */,
+				ABB788022517DF5400671AB9 /* Alamofire in Frameworks */,
 				03662F3D19DC9FACD8A9A2D6 /* Pods_PokemonXYiOS.framework in Frameworks */,
+				ABEC26D325196C8C001E40B0 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +60,6 @@
 				513F1B72FAB8D9A55AB5936D /* Pods-PokemonXYiOS.debug.xcconfig */,
 				28FE8DA1CE21D379F14F09CE /* Pods-PokemonXYiOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -64,6 +69,14 @@
 				C4CD755E35529A8ECDD9899C /* Pods_PokemonXYiOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB1E4DDB2518114500287D29 /* PokedexViews */ = {
+			isa = PBXGroup;
+			children = (
+				AB1E4DDC2518118800287D29 /* PokemonListTableViewController.swift */,
+			);
+			path = PokedexViews;
 			sourceTree = "<group>";
 		};
 		AB26B0642517DD550030D44A = {
@@ -87,6 +100,8 @@
 		AB26B06F2517DD550030D44A /* PokemonXYiOS */ = {
 			isa = PBXGroup;
 			children = (
+				ABEC26CE251958FE001E40B0 /* UIComponentsScripts */,
+				AB1E4DDB2518114500287D29 /* PokedexViews */,
 				ABB787FD2517DE9800671AB9 /* Model */,
 				ABB787FA2517DE3500671AB9 /* Pokebank */,
 				AB26B0702517DD550030D44A /* AppDelegate.swift */,
@@ -116,6 +131,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		ABEC26CE251958FE001E40B0 /* UIComponentsScripts */ = {
+			isa = PBXGroup;
+			children = (
+				ABEC26CF25195960001E40B0 /* PokemonIDCardTableViewCell.swift */,
+			);
+			path = UIComponentsScripts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,7 +158,8 @@
 			);
 			name = PokemonXYiOS;
 			packageProductDependencies = (
-				ABB788012517DF5400671AB9 /* SwiftPackageProductDependency */,
+				ABB788012517DF5400671AB9 /* Alamofire */,
+				ABEC26D225196C8C001E40B0 /* AlamofireImage */,
 			);
 			productName = PokemonXYiOS;
 			productReference = AB26B06D2517DD550030D44A /* PokemonXYiOS.app */;
@@ -166,7 +190,8 @@
 			);
 			mainGroup = AB26B0642517DD550030D44A;
 			packageReferences = (
-				ABB788002517DF5400671AB9 /* RemoteSwiftPackageReference */,
+				ABB788002517DF5400671AB9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				ABEC26D125196C8C001E40B0 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = AB26B06E2517DD550030D44A /* Products */;
 			projectDirPath = "";
@@ -238,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABB787FF2517DEAC00671AB9 /* Pokemon.swift in Sources */,
+				ABEC26D025195960001E40B0 /* PokemonIDCardTableViewCell.swift in Sources */,
+				AB1E4DDD2518118800287D29 /* PokemonListTableViewController.swift in Sources */,
 				ABB787FC2517DE8300671AB9 /* PokeBank.swift in Sources */,
 				AB26B0752517DD550030D44A /* ViewController.swift in Sources */,
 				AB26B0712517DD550030D44A /* AppDelegate.swift in Sources */,
@@ -441,7 +468,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ABB788002517DF5400671AB9 /* RemoteSwiftPackageReference */ = {
+		ABB788002517DF5400671AB9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
@@ -449,13 +476,26 @@
 				minimumVersion = 5.2.2;
 			};
 		};
+		ABEC26D125196C8C001E40B0 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ABB788012517DF5400671AB9 /* SwiftPackageProductDependency */ = {
+		ABB788012517DF5400671AB9 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ABB788002517DF5400671AB9 /* RemoteSwiftPackageReference */;
+			package = ABB788002517DF5400671AB9 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		ABEC26D225196C8C001E40B0 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABEC26D125196C8C001E40B0 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

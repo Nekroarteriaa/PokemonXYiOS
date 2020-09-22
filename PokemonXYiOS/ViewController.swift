@@ -13,19 +13,31 @@ import CCGradient
 class ViewController: UIViewController {
 
    // @IBOutlet weak var gradientView: CCGradientView!
-    @IBOutlet weak var gradientView: CCGradientView!
+    var gradientView = CCGradientView()
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        
-        gradientView.configuration = self
-        
 
-     
-        
+           
+        setBackground()
+
         GetPokemon()
+    }
+    
+    func setBackground()
+    {
+        spinner.startAnimating()
+        view.addSubview(gradientView)
+        gradientView.translatesAutoresizingMaskIntoConstraints = false
+        gradientView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        gradientView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        gradientView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        gradientView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        
+        view.sendSubviewToBack(gradientView)
+         gradientView.configuration = self
         
 
     }
@@ -41,43 +53,38 @@ class ViewController: UIViewController {
                     for item in pkmnListJson
                     {
                         var pokemon = Pokemon(pkmn: item)
+                        pokemon.getPokemonContent()
                         PokeBank.shared.PokemonBank.append(pokemon)
                         
-                        pokemon.getPokemonContent()
+                        
 
                     }
+                    
+                    Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.changeViewToTable), userInfo: nil, repeats: false)
                 }
             })
     }
-
-
-}
-
-extension UIColor {
-  
-    func colorFromHex(_ hex: String) -> UIColor {
+    
+    @objc func changeViewToTable()
+    {
+        spinner.stopAnimating()
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
-        var hexString = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
-        
-        if hexString.hasPrefix("#")
-        {
-            hexString.remove(at: hexString.startIndex)
+        guard let pokelistViewController = mainStoryboard.instantiateViewController(identifier: "PokemonListView") as? PokemonListTableViewController else{
+            print("nanai")
+            return
         }
         
-        if hexString.count != 6
-        {
-            return UIColor.black
-        }
+        //present(pokelistViewController, animated: true, completion: nil)
+        navigationController?.pushViewController(pokelistViewController, animated: true)
         
-        var rgb: UInt64 = 0
-        Scanner(string: hexString).scanHexInt64(&rgb)
         
-        return UIColor.init(red: CGFloat((rgb & 0xFF0000) >> 16 / 255),
-                            green: CGFloat((rgb & 0x00FF00) >> 8 / 255),
-                            blue: CGFloat(rgb & 0x0000FF) / 255.0,
-                            alpha: 1.0)
+        
     }
+
+
 }
+
 
 extension UIColor {
     convenience init(red: Int, green: Int, blue: Int) {

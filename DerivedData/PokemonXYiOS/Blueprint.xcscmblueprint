@@ -5,21 +5,28 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "F6B413E3B4481725AEDE18157EE1C12FF0F3E891" : 0,
+    "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86" : 0,
     "67620B5EFA902936DF04070AF595B76AB0333747" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D6C72F86-4C51-4D07-BDF1-5093B2D7B820",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "F6B413E3B4481725AEDE18157EE1C12FF0F3E891" : "PokemonXYiOS\/",
+    "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86" : "PokemonXYiOS\/DerivedData\/PokemonXYiOS\/SourcePackages\/checkouts\/AlamofireImage\/",
     "67620B5EFA902936DF04070AF595B76AB0333747" : "PokemonXYiOS\/DerivedData\/PokemonXYiOS\/SourcePackages\/checkouts\/Alamofire\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "PokemonXYiOS",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PokemonXYiOS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PokemonXYiOS.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/Alamofire",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67620B5EFA902936DF04070AF595B76AB0333747"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/AlamofireImage",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Nekroarteriaa\/PokemonXYiOS.git",
