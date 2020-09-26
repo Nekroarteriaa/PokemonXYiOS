@@ -13,24 +13,34 @@ import AlamofireImage
 
 class PokemonIDCardTableViewCell: UITableViewCell {
     
-   // var gradientView = CCGradientView()
+    var gradientView = CCGradientView()
     
     //@IBOutlet weak var tryImage: UIImageView!
     @IBOutlet weak var PokemonImage: UIImageView!
+    @IBOutlet weak var NameLabel: UILabel!
+    @IBOutlet weak var IDLabel: UILabel!
+    @IBOutlet weak var MainTypeLabel: UILabel!
+    @IBOutlet weak var SecondTypeLabel: UILabel!
+    
+    @IBOutlet weak var MainTypeImage: UIImageView!
+    @IBOutlet weak var SecondTypeImage: UIImageView!
+    
+    /*@IBOutlet weak var backgroundType: UIImageView!*/
+    
+    var backgroundGradient: [UIColor]?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        
-       /* tryImage.backgroundColor = UIColor.init(red: CGFloat.random(min: 0.0, max: 1.0), green: CGFloat.random(min: 0.0, max: 1.0), blue: CGFloat.random(min: 0.0, max: 1.0), alpha: 1)*/
+
+        setLabelCharacteristics()
     }
     
     
     func setIDCardBackground()
     {
         
-        /*contentView.addSubview(gradientView)
+        contentView.addSubview(gradientView)
         gradientView.translatesAutoresizingMaskIntoConstraints = false
         gradientView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         gradientView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
@@ -38,27 +48,12 @@ class PokemonIDCardTableViewCell: UITableViewCell {
         gradientView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
         
         contentView.sendSubviewToBack(gradientView)
-        gradientView.configuration = self.contentView*/
+        gradientView.configuration = self
         
         
     }
     
-    public func fetchPokemonImage(selectedPkmn: Pokemon)
-    {
-        
-        print(selectedPkmn.pokemon_imagesrc)
-        
-        AF.request(selectedPkmn.pokemon_imagesrc).responseImage(completionHandler:{
-            
-            response in
-            
-            if case .success(let image) = response.result
-            {
-                self.PokemonImage.image = image
-            }
-            
-        })
-    }
+    
     
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -67,22 +62,85 @@ class PokemonIDCardTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setLabelCharacteristics()
+    {
+        NameLabel.setCharacterSpacing(2.5)
+        IDLabel.setCharacterSpacing(2.5)
+        MainTypeLabel.setCharacterSpacing(2.5)
+        SecondTypeLabel.setCharacterSpacing(2.5)
+        
+        
+    }
+    
+    func hideContentbyTypes(types: [String])
+    {
+        MainTypeLabel.text = types[0]
+        MainTypeImage.image = PokeBank.shared.getPokemonTypeImage(type: types[0])
+        
+        MainTypeLabel.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
+        
+       /* MainTypeLabel.layer.cornerRadius = MainTypeImage.frame.size.height / 2*/
+        
+       /*
+        backgroundType.layer.position.y = MainTypeLabel.layer.position.y
+        backgroundType.backgroundColor = UIColor.red
+        backgroundType.frame.size.height = MainTypeLabel.frame.size.height
+         */
+        
+        if types.count > 1
+        {
+            SecondTypeLabel.isHidden = false
+            SecondTypeLabel.text = types[1]
+            SecondTypeImage.isHidden = false
+            SecondTypeImage.image = PokeBank.shared.getPokemonTypeImage(type: types[1])
+        }
+        
+        else
+        {
+            SecondTypeLabel.isHidden = true
+            SecondTypeImage.isHidden = true
+        }
+        
+        backgroundGradient = PokeBank.shared.getPokemonIDCardBackgroundColor(types: types)
+        
+        setIDCardBackground()
+    }
+    
 
 }
 
+extension UILabel{
+func setCharacterSpacing(_ spacing: CGFloat){
+    let attributedStr = NSMutableAttributedString(string: self.text ?? "")
+    attributedStr.addAttribute(NSAttributedString.Key.kern, value: spacing, range: NSMakeRange(0, attributedStr.length))
+    self.attributedText = attributedStr
+ }
+}
 
-/*extension ViewController: CCGradientViewConfiguration {
-    func configurationForGradientView(_ gradientView: CCGradientView) -> CCGradientConfiguration {
+extension UILabel {
+  func addCharacterSpacing(kernValue: Double = 1.15) {
+    if let labelText = text, labelText.count > 0 {
+      let attributedString = NSMutableAttributedString(string: labelText)
+        attributedString.addAttribute(NSAttributedString.Key.kern, value: kernValue, range: NSRange(location: 0, length: attributedString.length - 1))
+      attributedText = attributedString
+    }
+  }
+}
+
+extension PokemonIDCardTableViewCell: CCGradientViewConfiguration {
+    public func configurationForGradientView(_ gradientView: CCGradientView) -> CCGradientConfiguration {
         
-        let color4 = UIColor(red: 247, green: 122, blue: 38)
+        /*let color4 = UIColor(red: 247, green: 122, blue: 38)
         let color5 = UIColor(red: 251, green: 106, blue: 61)
-        let color6 = UIColor(red: 197, green: 66, blue: 22)
-        return CCGradientConfiguration(colors: [color4, color5, color6],
-                                       
-                                       type: CCGradientType.radial,
+        let color6 = UIColor(red: 197, green: 66, blue: 22)*/
+        return CCGradientConfiguration(colors: self.backgroundGradient!,
+                                       type: CCGradientType.axial,
+                                       points: [CGPoint(x: 0.0, y: 0.8),
+                                                CGPoint(x: 1, y: 1)]
+                                       /*,
                                        locations: [0.25, 0.75],
                                        points: [CGPoint(x: 0.5, y: 0.55),
-                                                CGPoint(x: 1.5, y: 1)]
+                                                CGPoint(x: 1.5, y: 1)]*/
                                        
                                        
                                        /*,
@@ -90,7 +148,7 @@ class PokemonIDCardTableViewCell: UITableViewCell {
                                         points: [CGPoint(x: 0.5, y: 0.5),
                                         CGPoint(x: 1, y: 1)]*/)
     }
-}*/
+}
 
 
 

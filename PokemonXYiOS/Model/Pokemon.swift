@@ -1,5 +1,8 @@
 
 import Foundation
+import Alamofire
+import AlamofireImage
+import UIKit
 
 struct Pokemon: Decodable{
     let name: String
@@ -31,6 +34,8 @@ struct Pokemon: Decodable{
     
     var pokemon_imagesrc: String = ""
     var pokemon_gifsrc: String = ""
+    
+    
     
     init(pkmn: NSDictionary)
     {
@@ -92,6 +97,7 @@ struct Pokemon: Decodable{
         nameLowercase = nameLowercase.replacingOccurrences(of: ".", with: "")
         
         self.pokemon_gifsrc = "https://play.pokemonshowdown.com/sprites/xyani/" + "\(nameLowercase)" + ".gif"
+        
     }
     
     
@@ -102,6 +108,37 @@ struct Pokemon: Decodable{
         
         return numberString!
     }
+    
+    
   
     
+}
+
+
+class PokemonObject
+{
+    var pokemon_UIImage: UIImage?
+    var pokemon : Pokemon
+    
+    init(pokemon:Pokemon) {
+        self.pokemon = pokemon
+        
+        self.pokemon.getPokemonContent()
+        
+        fetchPokemonImage()
+    }
+    
+    func fetchPokemonImage()
+    {
+        AF.request(self.pokemon.pokemon_imagesrc).responseImage(completionHandler:{
+            
+            response in
+            
+            if case .success(let image) = response.result
+            {
+                self.pokemon_UIImage = image
+            }
+                        
+        })
+    }
 }

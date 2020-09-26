@@ -6,6 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoe-ui-semibold-2.ttf">
+            <string>SegoeUI-Semibold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -16,14 +21,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spash" translatesAutoresizingMaskIntoConstraints="NO" id="9Mu-Ld-Pyz">
-                                <rect key="frame" x="108" y="286" width="250" height="174"/>
+                                <rect key="frame" x="82" y="251" width="250" height="174"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="174" id="WZf-76-nCO"/>
                                     <constraint firstAttribute="width" constant="250" id="hrP-0C-HWc"/>
                                 </constraints>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="F75-pz-nFP">
-                                <rect key="frame" x="219" y="480" width="20" height="37"/>
+                                <rect key="frame" x="197" y="433" width="20" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="Ur4-Ws-mn3"/>
                                 </constraints>
@@ -57,62 +62,68 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="151" id="vIK-Bc-yuN" customClass="PokemonIDCardTableViewCell" customModule="PokemonXYiOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="151"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="170" id="vIK-Bc-yuN" customClass="PokemonIDCardTableViewCell" customModule="PokemonXYiOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="170"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vIK-Bc-yuN" id="cNE-7q-2Yo">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="151"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pokedexbackground" translatesAutoresizingMaskIntoConstraints="NO" id="dJk-bM-D8U" userLabel="PokemonBackground">
-                                            <rect key="frame" x="303" y="0.0" width="150" height="150"/>
+                                            <rect key="frame" x="264" y="11" width="190" height="150"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynf-cU-W5G" userLabel="NameLabel">
-                                            <rect key="frame" x="20" y="19" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fletchinder" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynf-cU-W5G" userLabel="NameLabel">
+                                            <rect key="frame" x="30" y="15" width="121" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="24"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITu-Jb-3EG" userLabel="MainTypeLabel">
-                                            <rect key="frame" x="20" y="65" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fire" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITu-Jb-3EG" userLabel="MainTypeLabel">
+                                            <rect key="frame" x="30" y="71" width="28" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCq-r6-DcF" userLabel="SeconTypeLabel">
-                                            <rect key="frame" x="20" y="106" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flying" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCq-r6-DcF" userLabel="SeconTypeLabel">
+                                            <rect key="frame" x="30" y="100" width="46" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76b-Jd-9vi" userLabel="IdLabel">
-                                            <rect key="frame" x="157" y="19" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="acero" translatesAutoresizingMaskIntoConstraints="NO" id="JDc-LJ-xT6" userLabel="MainTypeImage">
-                                            <rect key="frame" x="100" y="65" width="20" height="20"/>
+                                            <rect key="frame" x="120" y="72" width="20" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="agua" translatesAutoresizingMaskIntoConstraints="NO" id="uIQ-ZR-9IV" userLabel="SecondTypeImage">
-                                            <rect key="frame" x="100" y="106" width="20" height="20"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="volador" translatesAutoresizingMaskIntoConstraints="NO" id="uIQ-ZR-9IV" userLabel="SecondTypeImage">
+                                            <rect key="frame" x="120" y="100" width="20" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iUk-7f-GJz" userLabel="PokemonImage">
-                                            <rect key="frame" x="264" y="1" width="150" height="150"/>
+                                            <rect key="frame" x="246" y="0.0" width="203" height="170"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#662" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76b-Jd-9vi" userLabel="IdLabel">
+                                            <rect key="frame" x="156" y="21" width="38" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="IDLabel" destination="76b-Jd-9vi" id="5Uf-gX-LXq"/>
+                                    <outlet property="MainTypeImage" destination="JDc-LJ-xT6" id="unO-77-N3S"/>
+                                    <outlet property="MainTypeLabel" destination="ITu-Jb-3EG" id="zQp-tV-b4a"/>
+                                    <outlet property="NameLabel" destination="ynf-cU-W5G" id="AvO-5S-otA"/>
                                     <outlet property="PokemonImage" destination="iUk-7f-GJz" id="oKd-yW-nYi"/>
+                                    <outlet property="SecondTypeImage" destination="uIQ-ZR-9IV" id="w74-g6-lOe"/>
+                                    <outlet property="SecondTypeLabel" destination="QCq-r6-DcF" id="PfI-C0-ShO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -126,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="3491.3043478260875" y="138.58695652173915"/>
         </scene>
-        <!--View Controller-->
+        <!--Pokemon Review View Controller-->
         <scene sceneID="2dT-xR-jEF">
             <objects>
-                <viewController storyboardIdentifier="PokemonDetail" id="QHu-fE-niu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PokemonDetail" id="QHu-fE-niu" customClass="PokemonReviewViewController" customModule="PokemonXYiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uUv-mb-4Vy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,8 +176,8 @@
     </scenes>
     <resources>
         <image name="acero" width="64" height="64"/>
-        <image name="agua" width="64" height="64"/>
         <image name="pokedexbackground" width="1523" height="1520"/>
         <image name="spash" width="974" height="719"/>
+        <image name="volador" width="64" height="64"/>
     </resources>
 </document>

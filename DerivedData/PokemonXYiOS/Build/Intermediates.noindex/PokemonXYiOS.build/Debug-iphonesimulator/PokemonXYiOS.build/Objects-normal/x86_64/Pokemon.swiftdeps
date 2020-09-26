@@ -1,15 +1,22 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "Pokemon"
+- "PokemonObject"
 provides-nominal:
 - "12PokemonXYiOS0A0V"
+- "12PokemonXYiOS0A6ObjectC"
 provides-member:
 - ["12PokemonXYiOS0A0V", ""]
+- ["12PokemonXYiOS0A6ObjectC", ""]
 provides-dynamic-lookup:
+- "fetchPokemonImage"
+- "pokemon"
+- "pokemon_UIImage"
 depends-top-level:
 - !private "!="
 - !private "+"
 - "=="
+- !private "AF"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
 - "Decodable"
@@ -18,8 +25,10 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - "NSDictionary"
 - "Pokemon"
+- "PokemonObject"
 - "String"
 - "StringLiteralType"
+- "UIImage"
 - !private "UnicodeScalarType"
 - !private "~="
 depends-member:
@@ -57,6 +66,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "intValue"]
 - !private ["s28CustomDebugStringConvertibleP", "lowercased"]
 - !private ["s28CustomDebugStringConvertibleP", "replacingOccurrences"]
+- !private ["s28CustomDebugStringConvertibleP", "result"]
 - ["s28CustomDebugStringConvertibleP", "stringValue"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s17CustomReflectableP", "init"]
@@ -76,8 +86,12 @@ depends-member:
 - ["s23CustomStringConvertibleP", "intValue"]
 - !private ["s23CustomStringConvertibleP", "lowercased"]
 - !private ["s23CustomStringConvertibleP", "replacingOccurrences"]
+- !private ["s23CustomStringConvertibleP", "responseImage"]
+- !private ["s23CustomStringConvertibleP", "result"]
 - ["s23CustomStringConvertibleP", "stringValue"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["9Alamofire11DataRequestC", "responseImage"]
+- !private ["9Alamofire12DataResponseV", "result"]
 - !private ["Se", "Int"]
 - ["Se", ""]
 - !private ["Se", "abilities"]
@@ -91,6 +105,7 @@ depends-member:
 - !private ["Se", "evolvedfrom"]
 - !private ["Se", "female_percentage"]
 - !private ["Se", "genderless"]
+- !private ["Se", "getPokemonContent"]
 - !private ["Se", "gettingPokemonNumber"]
 - !private ["Se", "height"]
 - !private ["Se", "hp"]
@@ -129,8 +144,10 @@ depends-member:
 - ["SQ", "intValue"]
 - !private ["SQ", "lowercased"]
 - !private ["SQ", "replacingOccurrences"]
+- !private ["SQ", "responseImage"]
 - ["SQ", "stringValue"]
 - !private ["SQ", "subscript"]
+- !private ["SQ", "success"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "lowercased"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "replacingOccurrences"]
@@ -153,8 +170,10 @@ depends-member:
 - ["SH", "intValue"]
 - !private ["SH", "lowercased"]
 - !private ["SH", "replacingOccurrences"]
+- !private ["SH", "responseImage"]
 - ["SH", "stringValue"]
 - !private ["SH", "subscript"]
+- !private ["SH", "success"]
 - !private ["s6HasherV", "combine"]
 - !private ["Si", "init"]
 - !private ["s22KeyedDecodingContainerV", "decode"]
@@ -227,12 +246,25 @@ depends-member:
 - ["12PokemonXYiOS0A0V", "weight"]
 - ["12PokemonXYiOS0A0V", "xdescription"]
 - ["12PokemonXYiOS0A0V", "ydescription"]
+- !private ["12PokemonXYiOS0A6ObjectC", "AF"]
+- ["12PokemonXYiOS0A6ObjectC", "Pokemon"]
+- ["12PokemonXYiOS0A6ObjectC", "UIImage"]
+- ["12PokemonXYiOS0A6ObjectC", "deinit"]
+- ["12PokemonXYiOS0A6ObjectC", "fetchPokemonImage"]
+- ["12PokemonXYiOS0A6ObjectC", "init"]
+- ["12PokemonXYiOS0A6ObjectC", "pokemon"]
+- ["12PokemonXYiOS0A6ObjectC", "pokemon_UIImage"]
 - !private ["Sm", "lowercased"]
 - !private ["Sm", "replacingOccurrences"]
+- !private ["9Alamofire7RequestC", "responseImage"]
+- !private ["9Alamofire15RequestDelegateP", "request"]
+- !private ["s6ResultO", "success"]
 - !private ["s10SIMDScalarP", "init"]
 - !private ["ST", "lowercased"]
 - !private ["ST", "replacingOccurrences"]
 - !private ["ST", "subscript"]
+- !private ["9Alamofire7SessionC", "request"]
+- !private ["9Alamofire20SessionStateProviderP", "request"]
 - !private ["SZ", "init"]
 - !private ["s13SignedNumericP", "init"]
 - !private ["Sx", "init"]
@@ -286,6 +318,8 @@ depends-nominal:
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "9Alamofire11DataRequestC"
+- !private "9Alamofire12DataResponseV"
 - "Se"
 - !private "s7DecoderP"
 - !private "s26DefaultStringInterpolationV"
@@ -318,9 +352,15 @@ depends-nominal:
 - !private "So8NSStringC"
 - !private "Sj"
 - "12PokemonXYiOS0A0V"
+- "12PokemonXYiOS0A6ObjectC"
 - !private "Sm"
+- !private "9Alamofire7RequestC"
+- !private "9Alamofire15RequestDelegateP"
+- !private "s6ResultO"
 - !private "s10SIMDScalarP"
 - !private "ST"
+- !private "9Alamofire7SessionC"
+- !private "9Alamofire20SessionStateProviderP"
 - !private "SZ"
 - !private "s13SignedNumericP"
 - !private "Sx"
@@ -354,6 +394,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/AlamofireImage.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/Alamofire.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/CCGradient/CCGradient.framework/Modules/CCGradient.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
@@ -373,4 +414,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1dd605edab9e8208dc6d66825a01683d"
+interface-hash: "4ed3e9c5a8c1f5fbc6846b9308f6caea"

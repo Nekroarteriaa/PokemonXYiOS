@@ -18,6 +18,8 @@
 		ABB787FC2517DE8300671AB9 /* PokeBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB787FB2517DE8300671AB9 /* PokeBank.swift */; };
 		ABB787FF2517DEAC00671AB9 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB787FE2517DEAC00671AB9 /* Pokemon.swift */; };
 		ABB788022517DF5400671AB9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ABB788012517DF5400671AB9 /* Alamofire */; };
+		ABC2108A251ACBEB004F2DAA /* segoe-ui-semibold-2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABC21089251ACBEB004F2DAA /* segoe-ui-semibold-2.ttf */; };
+		ABC2108C251F3140004F2DAA /* PokemonReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC2108B251F3140004F2DAA /* PokemonReviewViewController.swift */; };
 		ABEC26D025195960001E40B0 /* PokemonIDCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEC26CF25195960001E40B0 /* PokemonIDCardTableViewCell.swift */; };
 		ABEC26D325196C8C001E40B0 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = ABEC26D225196C8C001E40B0 /* AlamofireImage */; };
 /* End PBXBuildFile section */
@@ -36,6 +38,8 @@
 		AB26B07E2517DD560030D44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABB787FB2517DE8300671AB9 /* PokeBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeBank.swift; sourceTree = "<group>"; };
 		ABB787FE2517DEAC00671AB9 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		ABC21089251ACBEB004F2DAA /* segoe-ui-semibold-2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "segoe-ui-semibold-2.ttf"; sourceTree = "<group>"; };
+		ABC2108B251F3140004F2DAA /* PokemonReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonReviewViewController.swift; sourceTree = "<group>"; };
 		ABEC26CF25195960001E40B0 /* PokemonIDCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonIDCardTableViewCell.swift; sourceTree = "<group>"; };
 		C4CD755E35529A8ECDD9899C /* Pods_PokemonXYiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokemonXYiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -75,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				AB1E4DDC2518118800287D29 /* PokemonListTableViewController.swift */,
+				ABC2108B251F3140004F2DAA /* PokemonReviewViewController.swift */,
 			);
 			path = PokedexViews;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 		AB26B06F2517DD550030D44A /* PokemonXYiOS */ = {
 			isa = PBXGroup;
 			children = (
+				ABC21088251ACB48004F2DAA /* Fonts */,
 				ABEC26CE251958FE001E40B0 /* UIComponentsScripts */,
 				AB1E4DDB2518114500287D29 /* PokedexViews */,
 				ABB787FD2517DE9800671AB9 /* Model */,
@@ -129,6 +135,14 @@
 				ABB787FE2517DEAC00671AB9 /* Pokemon.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ABC21088251ACB48004F2DAA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ABC21089251ACBEB004F2DAA /* segoe-ui-semibold-2.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		ABEC26CE251958FE001E40B0 /* UIComponentsScripts */ = {
@@ -207,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC2108A251ACBEB004F2DAA /* segoe-ui-semibold-2.ttf in Resources */,
 				AB26B07D2517DD560030D44A /* LaunchScreen.storyboard in Resources */,
 				AB26B07A2517DD560030D44A /* Assets.xcassets in Resources */,
 				AB26B0782517DD550030D44A /* Main.storyboard in Resources */,
@@ -264,6 +279,7 @@
 			files = (
 				ABB787FF2517DEAC00671AB9 /* Pokemon.swift in Sources */,
 				ABEC26D025195960001E40B0 /* PokemonIDCardTableViewCell.swift in Sources */,
+				ABC2108C251F3140004F2DAA /* PokemonReviewViewController.swift in Sources */,
 				AB1E4DDD2518118800287D29 /* PokemonListTableViewController.swift in Sources */,
 				ABB787FC2517DE8300671AB9 /* PokeBank.swift in Sources */,
 				AB26B0752517DD550030D44A /* ViewController.swift in Sources */,

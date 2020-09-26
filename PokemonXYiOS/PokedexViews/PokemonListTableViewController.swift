@@ -45,19 +45,26 @@ class PokemonListTableViewController: UITableViewController {
         
         let item = PokeBank.shared.PokemonBank[indexPath.row]
         
-        cell.textLabel?.text = item.name
+        myCell.PokemonImage.image = PokeBank.shared.PokemonBank[indexPath.row].pokemon_UIImage
         
-        myCell.fetchPokemonImage(selectedPkmn: item)
+       // cell.textLabel?.text = item.pokemon.name
+        myCell.NameLabel.text = item.pokemon.name
+        myCell.IDLabel.text = item.pokemon.id
+        
+        myCell.hideContentbyTypes(types: item.pokemon.typeofpokemon)
 
         return myCell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        
 
         
         let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
                
-               guard let pokelistViewController = mainStoryboard.instantiateViewController(identifier: "PokemonDetail") as? UIViewController else{
+               guard let pokelistViewController = mainStoryboard.instantiateViewController(identifier: "PokemonDetail") as? PokemonReviewViewController else{
                    print("nanai")
                    return
                }
@@ -65,7 +72,10 @@ class PokemonListTableViewController: UITableViewController {
                //present(pokelistViewController, animated: true, completion: nil)
                navigationController?.pushViewController(pokelistViewController, animated: true)
         
+       /* pokelistViewController.desiredPokemon! = PokeBank.shared.PokemonBank[indexPath.row]*/
+        
         navigationController?.setNavigationBarHidden(false, animated: false)
+        
     }
     
 

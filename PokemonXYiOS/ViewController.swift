@@ -52,9 +52,9 @@ class ViewController: UIViewController {
                     
                     for item in pkmnListJson
                     {
-                        var pokemon = Pokemon(pkmn: item)
-                        pokemon.getPokemonContent()
-                        PokeBank.shared.PokemonBank.append(pokemon)
+                        var myPokemon = Pokemon(pkmn: item)
+                        var pokemonObj = PokemonObject(pokemon: myPokemon)
+                        PokeBank.shared.PokemonBank.append(pokemonObj)
                         
                         
 
@@ -74,10 +74,10 @@ class ViewController: UIViewController {
             print("nanai")
             return
         }
-        
+                
         //present(pokelistViewController, animated: true, completion: nil)
         navigationController?.pushViewController(pokelistViewController, animated: true)
-        
+        //self.show(pokelistViewController, sender: nil)
         
         
     }
