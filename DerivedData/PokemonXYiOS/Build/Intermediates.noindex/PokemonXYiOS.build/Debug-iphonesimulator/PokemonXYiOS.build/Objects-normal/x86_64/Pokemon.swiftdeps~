@@ -30,7 +30,6 @@ depends-top-level:
 - "StringLiteralType"
 - "UIImage"
 - !private "UnicodeScalarType"
-- !private "print"
 - !private "~="
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
@@ -255,7 +254,6 @@ depends-member:
 - ["12PokemonXYiOS0A6ObjectC", "init"]
 - ["12PokemonXYiOS0A6ObjectC", "pokemon"]
 - ["12PokemonXYiOS0A6ObjectC", "pokemon_UIImage"]
-- !private ["12PokemonXYiOS0A6ObjectC", "print"]
 - !private ["Sm", "lowercased"]
 - !private ["Sm", "replacingOccurrences"]
 - !private ["9Alamofire7RequestC", "responseImage"]

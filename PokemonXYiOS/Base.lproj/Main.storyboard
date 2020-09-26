@@ -69,52 +69,86 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pokedexbackground" translatesAutoresizingMaskIntoConstraints="NO" id="dJk-bM-D8U" userLabel="PokemonBackground">
-                                            <rect key="frame" x="264" y="11" width="190" height="150"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokedexbackground" translatesAutoresizingMaskIntoConstraints="NO" id="dJk-bM-D8U" userLabel="PokemonBackground">
+                                            <rect key="frame" x="224" y="10" width="266" height="150"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="190" id="CeE-kR-6Fj"/>
+                                                <constraint firstAttribute="height" constant="150" id="TbK-Ow-GG6"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fletchinder" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynf-cU-W5G" userLabel="NameLabel">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fletchinder" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynf-cU-W5G" userLabel="NameLabel">
                                             <rect key="frame" x="30" y="15" width="121" height="32"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="24"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fire" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITu-Jb-3EG" userLabel="MainTypeLabel">
-                                            <rect key="frame" x="30" y="71" width="28" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fire" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITu-Jb-3EG" userLabel="MainTypeLabel">
+                                            <rect key="frame" x="30" y="71" width="28" height="23"/>
                                             <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flying" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCq-r6-DcF" userLabel="SeconTypeLabel">
-                                            <rect key="frame" x="30" y="100" width="46" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flying" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCq-r6-DcF" userLabel="SeconTypeLabel">
+                                            <rect key="frame" x="30" y="101" width="46" height="21"/>
                                             <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="acero" translatesAutoresizingMaskIntoConstraints="NO" id="JDc-LJ-xT6" userLabel="MainTypeImage">
-                                            <rect key="frame" x="120" y="72" width="20" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="volador" translatesAutoresizingMaskIntoConstraints="NO" id="uIQ-ZR-9IV" userLabel="SecondTypeImage">
-                                            <rect key="frame" x="120" y="100" width="20" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iUk-7f-GJz" userLabel="PokemonImage">
-                                            <rect key="frame" x="246" y="0.0" width="203" height="170"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#662" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76b-Jd-9vi" userLabel="IdLabel">
-                                            <rect key="frame" x="156" y="21" width="38" height="23"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#662" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76b-Jd-9vi" userLabel="IdLabel">
+                                            <rect key="frame" x="156" y="21" width="39" height="23"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="23" id="PMD-po-QH8"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="acero" translatesAutoresizingMaskIntoConstraints="NO" id="JDc-LJ-xT6" userLabel="MainTypeImage">
+                                            <rect key="frame" x="120" y="74" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="HDX-Vb-Wbe"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iUk-7f-GJz" userLabel="PokemonImage">
+                                            <rect key="frame" x="271" y="0.0" width="203" height="170"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="170" id="GYN-sO-L9D"/>
+                                                <constraint firstAttribute="width" constant="203" id="ohP-fb-yJR"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="volador" translatesAutoresizingMaskIntoConstraints="NO" id="uIQ-ZR-9IV" userLabel="SecondTypeImage">
+                                            <rect key="frame" x="120" y="102" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="8kt-M5-erx"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="uIQ-ZR-9IV" secondAttribute="bottom" constant="48" id="0j5-VT-4vM"/>
+                                        <constraint firstAttribute="trailing" secondItem="dJk-bM-D8U" secondAttribute="trailing" constant="-76" id="3cA-Wb-wGB"/>
+                                        <constraint firstItem="JDc-LJ-xT6" firstAttribute="top" secondItem="cNE-7q-2Yo" secondAttribute="top" constant="74" id="Bpy-ux-UsN"/>
+                                        <constraint firstItem="uIQ-ZR-9IV" firstAttribute="leading" secondItem="cNE-7q-2Yo" secondAttribute="leading" constant="120" id="QKM-MY-x9y"/>
+                                        <constraint firstAttribute="trailing" secondItem="iUk-7f-GJz" secondAttribute="trailing" constant="-60" id="QwP-Nm-g6Y"/>
+                                        <constraint firstItem="JDc-LJ-xT6" firstAttribute="leading" secondItem="cNE-7q-2Yo" secondAttribute="leading" constant="120" id="Toj-wB-wSE"/>
+                                        <constraint firstAttribute="bottom" secondItem="iUk-7f-GJz" secondAttribute="bottom" id="VcR-2A-4DN"/>
+                                        <constraint firstAttribute="bottom" secondItem="dJk-bM-D8U" secondAttribute="bottom" constant="10" id="bU8-1z-6rV"/>
+                                        <constraint firstItem="ynf-cU-W5G" firstAttribute="leading" secondItem="cNE-7q-2Yo" secondAttribute="leading" constant="30" id="eK7-ZQ-FfF"/>
+                                        <constraint firstItem="uIQ-ZR-9IV" firstAttribute="top" secondItem="cNE-7q-2Yo" secondAttribute="top" constant="102" id="eWn-gl-NdC"/>
+                                        <constraint firstItem="ynf-cU-W5G" firstAttribute="top" secondItem="cNE-7q-2Yo" secondAttribute="top" constant="15" id="f1O-NN-pmm"/>
+                                        <constraint firstItem="QCq-r6-DcF" firstAttribute="leading" secondItem="cNE-7q-2Yo" secondAttribute="leading" constant="30" id="i62-Ms-Efh"/>
+                                        <constraint firstAttribute="bottom" secondItem="ITu-Jb-3EG" secondAttribute="bottom" constant="76" id="j9o-S5-ULJ"/>
+                                        <constraint firstItem="ITu-Jb-3EG" firstAttribute="leading" secondItem="cNE-7q-2Yo" secondAttribute="leading" constant="30" id="jX8-F6-Vo5"/>
+                                        <constraint firstItem="ITu-Jb-3EG" firstAttribute="top" secondItem="cNE-7q-2Yo" secondAttribute="top" constant="71" id="jat-Hf-lzQ"/>
+                                        <constraint firstItem="76b-Jd-9vi" firstAttribute="leading" secondItem="ynf-cU-W5G" secondAttribute="trailing" constant="5" id="k5f-kc-LoN"/>
+                                        <constraint firstItem="dJk-bM-D8U" firstAttribute="leading" secondItem="cNE-7q-2Yo" secondAttribute="leading" constant="224" id="lth-TQ-RpE"/>
+                                        <constraint firstAttribute="bottom" secondItem="QCq-r6-DcF" secondAttribute="bottom" constant="48" id="m2z-vr-Arz"/>
+                                        <constraint firstAttribute="bottom" secondItem="76b-Jd-9vi" secondAttribute="bottom" constant="126" id="nTg-Rl-56A"/>
+                                        <constraint firstAttribute="bottom" secondItem="JDc-LJ-xT6" secondAttribute="bottom" constant="76" id="p5V-b2-HbE"/>
+                                        <constraint firstItem="iUk-7f-GJz" firstAttribute="top" secondItem="cNE-7q-2Yo" secondAttribute="top" id="qAR-cI-2EJ"/>
+                                        <constraint firstItem="dJk-bM-D8U" firstAttribute="top" secondItem="cNE-7q-2Yo" secondAttribute="top" constant="10" id="rDF-sh-75Y"/>
+                                        <constraint firstItem="QCq-r6-DcF" firstAttribute="top" secondItem="cNE-7q-2Yo" secondAttribute="top" constant="101" id="xMH-eV-ODH"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="IDLabel" destination="76b-Jd-9vi" id="5Uf-gX-LXq"/>

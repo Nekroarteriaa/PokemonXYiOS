@@ -1,12 +1,12 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "e5acc59fa49c02dcb54817db0640c581"
-build_time: [1601109936, 242072000]
+build_time: [1601110356, 796932000]
 inputs:
-  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/Model/Pokemon.swift": [1600889770, 812169038]
-  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/UIComponentsScripts/PokemonIDCardTableViewCell.swift": [1601109806, 819982503]
-  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/PokemonReviewViewController.swift": [1601109853, 866555929]
-  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/PokemonListTableViewController.swift": [1601109931, 897162958]
-  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/Pokebank/PokeBank.swift": [1600829623, 304662067]
-  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/ViewController.swift": [1600889770, 705585967]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/Model/Pokemon.swift": [1601110351, 890771608]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/UIComponentsScripts/PokemonIDCardTableViewCell.swift": [1601110351, 894846569]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/PokemonReviewViewController.swift": [1601110351, 893868672]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/PokemonListTableViewController.swift": [1601110351, 892973498]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/Pokebank/PokeBank.swift": [1601110351, 891913314]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/ViewController.swift": [1601110351, 895961794]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/AppDelegate.swift": [1600628181, 825604428]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/SceneDelegate.swift": [1600628181, 836176891]
