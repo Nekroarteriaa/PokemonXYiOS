@@ -79,11 +79,7 @@ class ViewController: UIViewController, FetchedPokemon {
             return
         }
                 
-        //present(pokelistViewController, animated: true, completion: nil)
         navigationController?.pushViewController(pokelistViewController, animated: true)
-        //self.show(pokelistViewController, sender: nil)
-        
-        
     }
     
     func OnFinishedLoading()
