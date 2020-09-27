@@ -10,11 +10,14 @@ import UIKit
 import Alamofire
 import CCGradient
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, FetchedPokemon {
+   
+    
 
    // @IBOutlet weak var gradientView: CCGradientView!
     var gradientView = CCGradientView()
     @IBOutlet weak var spinner: UIActivityIndicatorView!
+    var indexLoadedPokemon: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,13 +57,14 @@ class ViewController: UIViewController {
                     {
                         var myPokemon = Pokemon(pkmn: item)
                         var pokemonObj = PokemonObject(pokemon: myPokemon)
+                        pokemonObj.delegate = self
                         PokeBank.shared.PokemonBank.append(pokemonObj)
                         
                         
 
                     }
                     
-                    Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.changeViewToTable), userInfo: nil, repeats: false)
+                    //Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.changeViewToTable), userInfo: nil, repeats: false)
                 }
             })
     }
@@ -80,6 +84,17 @@ class ViewController: UIViewController {
         //self.show(pokelistViewController, sender: nil)
         
         
+    }
+    
+    func OnFinishedLoading()
+    {
+           indexLoadedPokemon += 1
+        print(indexLoadedPokemon)
+        if indexLoadedPokemon == PokeBank.shared.PokemonBank.count
+        {
+           
+           changeViewToTable()
+        }
     }
 
 

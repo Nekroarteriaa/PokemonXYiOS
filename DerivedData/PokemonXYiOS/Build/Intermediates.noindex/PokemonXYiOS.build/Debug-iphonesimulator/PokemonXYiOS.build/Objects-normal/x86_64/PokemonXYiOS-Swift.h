@@ -257,10 +257,13 @@ SWIFT_CLASS("_TtC12PokemonXYiOS30PokemonListTableViewController")
 
 SWIFT_CLASS("_TtC12PokemonXYiOS27PokemonReviewViewController")
 @interface PokemonReviewViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pokemonIDImageProfile;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 @class UIWindow;
 @class UIScene;

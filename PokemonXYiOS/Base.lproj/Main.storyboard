@@ -77,25 +77,25 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fletchinder" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynf-cU-W5G" userLabel="NameLabel">
-                                            <rect key="frame" x="30" y="15" width="121" height="32"/>
+                                            <rect key="frame" x="30.000000000000007" y="15" width="119.66666666666669" height="28"/>
                                             <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="24"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fire" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITu-Jb-3EG" userLabel="MainTypeLabel">
-                                            <rect key="frame" x="30" y="71" width="28" height="23"/>
+                                            <rect key="frame" x="30" y="71" width="28.333333333333329" height="23"/>
                                             <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flying" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCq-r6-DcF" userLabel="SeconTypeLabel">
-                                            <rect key="frame" x="30" y="101" width="46" height="21"/>
+                                            <rect key="frame" x="30.000000000000004" y="101" width="45.333333333333343" height="21"/>
                                             <fontDescription key="fontDescription" name="SegoeUI-Semibold" family="Segoe UI" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#662" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76b-Jd-9vi" userLabel="IdLabel">
-                                            <rect key="frame" x="156" y="21" width="39" height="23"/>
+                                            <rect key="frame" x="154.66666666666666" y="21" width="38" height="23"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="23" id="PMD-po-QH8"/>
                                             </constraints>
@@ -178,14 +178,37 @@
                     <view key="view" contentMode="scaleToFill" id="uUv-mb-4Vy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokedexbackground" translatesAutoresizingMaskIntoConstraints="NO" id="c32-F4-jRP">
+                                <rect key="frame" x="0.0" y="20" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="FWX-50-XJ3"/>
+                                    <constraint firstAttribute="height" constant="400" id="zvf-1H-5Jq"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a0a-vB-j9a">
+                                <rect key="frame" x="40" y="80" width="334" height="280"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a0a-vB-j9a" firstAttribute="height" secondItem="c32-F4-jRP" secondAttribute="height" multiplier="0.7" id="25n-o4-Ay1"/>
+                            <constraint firstItem="c32-F4-jRP" firstAttribute="leading" secondItem="9JQ-iQ-xlt" secondAttribute="leading" id="I9j-sa-GeD"/>
+                            <constraint firstItem="a0a-vB-j9a" firstAttribute="top" secondItem="9JQ-iQ-xlt" secondAttribute="top" constant="80" id="IOU-0C-OrT"/>
+                            <constraint firstItem="c32-F4-jRP" firstAttribute="top" secondItem="9JQ-iQ-xlt" secondAttribute="top" constant="20" id="IrY-W4-Qvx"/>
+                            <constraint firstItem="a0a-vB-j9a" firstAttribute="leading" secondItem="9JQ-iQ-xlt" secondAttribute="leading" constant="40" id="XrP-lN-srh"/>
+                            <constraint firstItem="a0a-vB-j9a" firstAttribute="width" secondItem="c32-F4-jRP" secondAttribute="width" multiplier="0.806763" id="a1h-fK-f6i"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9JQ-iQ-xlt"/>
                     </view>
                     <navigationItem key="navigationItem" id="oBO-mR-qeV"/>
+                    <connections>
+                        <outlet property="pokemonIDImageProfile" destination="a0a-vB-j9a" id="kQQ-2N-NhU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RSj-w0-fMn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4338" y="139"/>
+            <point key="canvasLocation" x="4337.68115942029" y="138.58695652173915"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ebP-VZ-fmS">

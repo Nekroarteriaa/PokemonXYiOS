@@ -68,12 +68,12 @@ class PokemonListTableViewController: UITableViewController {
                    print("nanai")
                    return
                }
+        
+                let item = PokeBank.shared.PokemonBank[indexPath.row]
                
-               //present(pokelistViewController, animated: true, completion: nil)
+            pokelistViewController.setDesiredPokemon(pkmnObj: item)
                navigationController?.pushViewController(pokelistViewController, animated: true)
-        
-       /* pokelistViewController.desiredPokemon! = PokeBank.shared.PokemonBank[indexPath.row]*/
-        
+
         navigationController?.setNavigationBarHidden(false, animated: false)
         
     }

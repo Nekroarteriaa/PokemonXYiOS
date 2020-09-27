@@ -174,10 +174,11 @@ class PokeBank{
 
         case "Ghost":
             let ghostGradient : [UIColor] =
-            [UIColor(red: 70, green: 240, blue: 203),
+            [UIColor(red: 70, green: 0, blue: 255),
              UIColor(red: 52, green: 1, blue: 188),
              UIColor(red: 16, green: 2, blue: 56)]
             return ghostGradient
+
 
         case "Dark":
             let darkGradient : [UIColor] =

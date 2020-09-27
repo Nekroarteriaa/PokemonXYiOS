@@ -85,7 +85,25 @@ struct Pokemon: Decodable{
     mutating func getPokemonContent(){
         let pokeNumbr = gettingPokemonNumber(idNumbr: self.id)
         
-        self.pokemon_imagesrc = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/ultra-sun-ultra-moon/" + "\(pokeNumbr)" + ".png"
+        if pokeNumbr <= 807
+        {
+            self.pokemon_imagesrc = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/ultra-sun-ultra-moon/" + "\(pokeNumbr)" + ".png"
+        }
+        
+        else
+        {
+            if pokeNumbr == 808
+            {
+                self.pokemon_imagesrc = "https://img.pokemondb.net/sprites/home/normal/meltan.png"
+            }
+                
+            else
+            {
+                self.pokemon_imagesrc = "https://img.pokemondb.net/sprites/home/normal/melmetal.png"
+            }
+                
+        }
+        
         
         var nameLowercase = self.name.lowercased()
         nameLowercase = nameLowercase.replacingOccurrences(of: " ", with: "")
@@ -95,6 +113,7 @@ struct Pokemon: Decodable{
         nameLowercase = nameLowercase.replacingOccurrences(of: "-", with: "")
         nameLowercase = nameLowercase.replacingOccurrences(of: "é", with: "e")
         nameLowercase = nameLowercase.replacingOccurrences(of: ".", with: "")
+        nameLowercase = nameLowercase.replacingOccurrences(of: ":", with: "")
         
         self.pokemon_gifsrc = "https://play.pokemonshowdown.com/sprites/xyani/" + "\(nameLowercase)" + ".gif"
         
@@ -114,11 +133,17 @@ struct Pokemon: Decodable{
     
 }
 
+protocol FetchedPokemon {
+    func OnFinishedLoading()
+}
+
 
 class PokemonObject
 {
     var pokemon_UIImage: UIImage?
     var pokemon : Pokemon
+    var delegate: FetchedPokemon?
+    var pokemon_UIGif: UIImage?
     
     init(pokemon:Pokemon) {
         self.pokemon = pokemon
@@ -127,6 +152,7 @@ class PokemonObject
         
         fetchPokemonImage()
     }
+    
     
     func fetchPokemonImage()
     {
@@ -137,6 +163,25 @@ class PokemonObject
             if case .success(let image) = response.result
             {
                 self.pokemon_UIImage = image
+                //print(self.pokemon.id + " " + self.pokemon.name)
+            }
+            
+            self.fetchPokemonGif()
+                        
+        })
+    }
+    
+    func fetchPokemonGif()
+    {
+        AF.request(self.pokemon.pokemon_gifsrc).responseImage(completionHandler:{
+            
+            response in
+            
+            if case .success(let image) = response.result
+            {
+                self.pokemon_UIGif = image
+                //print(self.pokemon.id + " " + self.pokemon.name)
+                self.delegate?.OnFinishedLoading()
             }
                         
         })
