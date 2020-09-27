@@ -37,7 +37,9 @@ depends-top-level:
 - "String"
 - "StringLiteralType"
 - "UIImage"
+- !private "URL"
 - !private "UnicodeScalarType"
+- !private "ZGIFImage"
 - !private "~="
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
@@ -259,6 +261,8 @@ depends-member:
 - ["12PokemonXYiOS0A6ObjectC", "FetchedPokemon"]
 - ["12PokemonXYiOS0A6ObjectC", "Pokemon"]
 - ["12PokemonXYiOS0A6ObjectC", "UIImage"]
+- !private ["12PokemonXYiOS0A6ObjectC", "URL"]
+- !private ["12PokemonXYiOS0A6ObjectC", "ZGIFImage"]
 - ["12PokemonXYiOS0A6ObjectC", "deinit"]
 - ["12PokemonXYiOS0A6ObjectC", "delegate"]
 - ["12PokemonXYiOS0A6ObjectC", "fetchPokemonGif"]
@@ -269,6 +273,7 @@ depends-member:
 - ["12PokemonXYiOS0A6ObjectC", "pokemon_UIImage"]
 - !private ["Sm", "lowercased"]
 - !private ["Sm", "replacingOccurrences"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["9Alamofire7RequestC", "responseImage"]
 - !private ["9Alamofire15RequestDelegateP", "request"]
 - !private ["s6ResultO", "success"]
@@ -293,8 +298,11 @@ depends-member:
 - !private ["s16TextOutputStreamP", "replacingOccurrences"]
 - !private ["s20TextOutputStreamableP", "lowercased"]
 - !private ["s20TextOutputStreamableP", "replacingOccurrences"]
+- !private ["10Foundation3URLV", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "lowercased"]
 - !private ["9Alamofire14URLConvertibleP", "replacingOccurrences"]
+- !private ["9ZGIFImageAAC", "image"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "lowercased"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "replacingOccurrences"]
@@ -305,6 +313,7 @@ depends-member:
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "replacingOccurrences"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "lowercased"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "replacingOccurrences"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "lowercased"]
 - !private ["s19_HasContiguousBytesP", "replacingOccurrences"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
@@ -368,6 +377,7 @@ depends-nominal:
 - "12PokemonXYiOS0A0V"
 - "12PokemonXYiOS0A6ObjectC"
 - !private "Sm"
+- !private "10Foundation20ReferenceConvertibleP"
 - !private "9Alamofire7RequestC"
 - !private "9Alamofire15RequestDelegateP"
 - !private "s6ResultO"
@@ -383,12 +393,15 @@ depends-nominal:
 - !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
+- !private "10Foundation3URLV"
 - !private "9Alamofire14URLConvertibleP"
+- !private "9ZGIFImageAAC"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
@@ -408,12 +421,16 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/ZGIFImage/ZGIFImage.framework/Modules/ZGIFImage.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/AlamofireImage.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/Alamofire.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/CCGradient/CCGradient.framework/Modules/CCGradient.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/ZGIFImage/ZGIFImage.framework/Headers/ZGIFImage-umbrella.h"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/CCGradient/CCGradient.framework/Headers/CCGradient-umbrella.h"
+- "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/ZGIFImage/ZGIFImage.framework/Headers/ZGIFImage-Swift.h"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/CCGradient/CCGradient.framework/Headers/CCGradient-Swift.h"
+- "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/ZGIFImage/ZGIFImage.framework/Modules/module.modulemap"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/CCGradient/CCGradient.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
@@ -428,4 +445,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "7ca933ff4b8eec1dc8c2e4d82b28e37a"
+interface-hash: "80725228d9cdc47a1fbe397b80e663e9"

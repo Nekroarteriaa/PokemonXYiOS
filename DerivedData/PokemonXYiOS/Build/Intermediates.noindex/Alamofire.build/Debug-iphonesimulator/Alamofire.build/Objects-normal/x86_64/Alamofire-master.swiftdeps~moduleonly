@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "1dbcab20e3c6b13dd7702c3c46ec30a6"
-build_time: [1600628694, 839256000]
+build_time: [1601180639, 788932000]
 inputs:
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/SourcePackages/checkouts/Alamofire/Source/AFError.swift": [1600628689, 962706110]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/SourcePackages/checkouts/Alamofire/Source/Alamofire.swift": [1600628689, 963159810]

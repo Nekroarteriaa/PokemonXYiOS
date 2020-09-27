@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "2af40e56f3ad523f1069f1035af24663"
-build_time: [1601182181, 613293000]
+build_time: [1601182097, 114152000]
 inputs:
-  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/Model/Pokemon.swift": [1601182175, 35607125]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/Model/Pokemon.swift": [1601181387, 767381370]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/UIComponentsScripts/PokemonIDCardTableViewCell.swift": [1601176023, 446518102]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/PokemonReviewViewController.swift": [1601180622, 615872157]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/PokemonListTableViewController.swift": [1601121513, 751364231]

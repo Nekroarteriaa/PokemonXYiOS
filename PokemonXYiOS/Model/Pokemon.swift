@@ -3,6 +3,7 @@ import Foundation
 import Alamofire
 import AlamofireImage
 import UIKit
+import ZGIFImage
 
 struct Pokemon: Decodable{
     let name: String
@@ -172,18 +173,11 @@ class PokemonObject
     }
     
     func fetchPokemonGif()
-    {
-        AF.request(self.pokemon.pokemon_gifsrc).responseImage(completionHandler:{
-            
-            response in
-            
-            if case .success(let image) = response.result
-            {
-                self.pokemon_UIGif = image
-                //print(self.pokemon.id + " " + self.pokemon.name)
-                self.delegate?.OnFinishedLoading()
-            }
-                        
-        })
+    {               
+        if let url = URL(string: self.pokemon.pokemon_gifsrc) {
+            let urlImage = ZGIFImage.image(url: url)
+            self.pokemon_UIGif = urlImage
+            self.delegate?.OnFinishedLoading()
+        }
     }
 }
