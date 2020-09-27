@@ -70,6 +70,8 @@ class PokemonIDCardTableViewCell: UITableViewCell {
         SecondTypeLabel.setCharacterSpacing(2.5)
         
         
+        
+        
     }
     
     func hideContentbyTypes(types: [String])
