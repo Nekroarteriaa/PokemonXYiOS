@@ -49,7 +49,7 @@ class PokemonIDCardTableViewCell: UITableViewCell {
         
         contentView.sendSubviewToBack(gradientView)
         gradientView.configuration = self
-        
+             
         
     }
     

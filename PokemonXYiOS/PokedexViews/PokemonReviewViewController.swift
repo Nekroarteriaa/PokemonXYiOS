@@ -8,21 +8,53 @@
 
 import UIKit
 import CCGradient
+import SwipeMenuViewController
 
 class PokemonReviewViewController: UIViewController {
+    
+    var tabElements: [String] = ["ABOUT", "EVOLVES", "STATS", "MOVES"]
     
     var gradientView = CCGradientView()
      var backgroundGradient: [UIColor]?
     var desiredPokemon: PokemonObject?
 
     @IBOutlet weak var pokemonIDImageProfile: UIImageView!
+    @IBOutlet weak var pokemonIDNumberLabel: UILabel!
+    @IBOutlet weak var pokemonNameLabel: UILabel!
+    
+    @IBOutlet weak var swipeView: SwipeMenuView!
+    
+    
+    var about: AboutViewController = {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        var viewController = storyboard.instantiateViewController(identifier: "PokemonAboutView") as! AboutViewController
+        
+        return viewController
+    }()
+    
+    
+    let vc2 = ContentViewController()
+    let vc3 = ContentViewController()
+    let vc4 = ContentViewController()
+    
+    var views:[UIViewController] = []
     
     
     override func viewDidLoad() {
+        
+        let vc = self.about
+        vc.selectedPokemon = desiredPokemon
+        
+        views.append(vc)
+        views.append(vc2)
+        views.append(vc3)
+        views.append(vc4)
+        
         super.viewDidLoad()
+        
+       
     
-        print(desiredPokemon!.pokemon.name)
-
         // Do any additional setup after loading the view.
     }
     
@@ -52,7 +84,51 @@ class PokemonReviewViewController: UIViewController {
     
     func settingVariables()
     {
+        desiredPokemon?.fetchPokemonGif()
         pokemonIDImageProfile.image = desiredPokemon?.pokemon_UIGif!
+        
+        pokemonIDNumberLabel.text  = desiredPokemon?.pokemon.id
+        pokemonNameLabel.text = desiredPokemon?.pokemon.name
+        pokemonNameLabel.setCharacterSpacing(1.5)
+        
+
+        
+        swipeView.delegate = self
+        swipeView.dataSource = self
+        
+        swipeView.layer.cornerRadius = swipeView.frame.height/2
+           
+        var options: SwipeMenuViewOptions = .init()
+        options.tabView.itemView.margin = 18
+        options.tabView.backgroundColor = UIColor.white
+        swipeView.reloadData(options: options)
+        
+        setVCtoInformationView()
+    }
+    
+    
+    func setVCtoInformationView()
+    {
+        /*informationView.backgroundColor = UIColor.init(white: 1, alpha: 0)
+        holderView.bounds = informationView.bounds
+        holderView.addSubview(vc.view)*/
+        
+        /*
+        informationView.addSubview(vc.view)
+        vc.didMove(toParent: self)
+        vc.view.bounds = informationView.bounds*/
+        
+
+    }
+    
+    func setVCConstraints()
+    {
+        /*vc.view.translatesAutoresizingMaskIntoConstraints = false
+        vc.view.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -20).isActive = true
+        vc.view.leadingAnchor.constraint(equalTo: view.trailingAnchor, constant: 20).isActive = true
+        vc.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        vc.view.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        */
     }
     
 
@@ -77,8 +153,8 @@ extension PokemonReviewViewController: CCGradientViewConfiguration {
         let color6 = UIColor(red: 197, green: 66, blue: 22)*/
         return CCGradientConfiguration(colors: self.backgroundGradient!,
                                        type: CCGradientType.axial,
-                                       points: [CGPoint(x: 0.0, y: 0.8),
-                                                CGPoint(x: 1, y: 1)]
+                                       points: [CGPoint(x: 0.0, y: 0.0),
+                                                CGPoint(x: 0.5, y: 1.5)]
                                        /*,
                                        locations: [0.25, 0.75],
                                        points: [CGPoint(x: 0.5, y: 0.55),
@@ -91,3 +167,52 @@ extension PokemonReviewViewController: CCGradientViewConfiguration {
                                         CGPoint(x: 1, y: 1)]*/)
     }
 }
+
+extension PokemonReviewViewController: SwipeMenuViewDelegate {
+
+    // MARK - SwipeMenuViewDelegate
+    func swipeMenuView(_ swipeMenuView: SwipeMenuView, viewWillSetupAt currentIndex: Int) {
+        // Codes
+    }
+
+    func swipeMenuView(_ swipeMenuView: SwipeMenuView, viewDidSetupAt currentIndex: Int) {
+        // Codes
+    }
+
+    func swipeMenuView(_ swipeMenuView: SwipeMenuView, willChangeIndexFrom fromIndex: Int, to toIndex: Int) {
+        
+        
+    }
+
+    func swipeMenuView(_ swipeMenuView: SwipeMenuView, didChangeIndexFrom fromIndex: Int, to toIndex: Int) {
+        
+        switch toIndex {
+        case 1:
+            vc2.view.backgroundColor = UIColor.green
+        case 2:
+            vc3.view.backgroundColor = UIColor.red
+        case 3:
+            vc4.view.backgroundColor = UIColor.yellow
+        default:
+             return
+        }
+    }
+}
+
+
+extension PokemonReviewViewController: SwipeMenuViewDataSource {
+
+    //MARK - SwipeMenuViewDataSource
+    func numberOfPages(in swipeMenuView: SwipeMenuView) -> Int {
+        return tabElements.count
+    }
+
+    func swipeMenuView(_ swipeMenuView: SwipeMenuView, titleForPageAt index: Int) -> String {
+        return tabElements[index]
+    }
+
+    func swipeMenuView(_ swipeMenuView: SwipeMenuView, viewControllerForPageAt index: Int) -> UIViewController {
+        return views[index]
+    }
+}
+

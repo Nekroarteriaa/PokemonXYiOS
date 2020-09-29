@@ -167,13 +167,14 @@ class PokemonObject
                 //print(self.pokemon.id + " " + self.pokemon.name)
             }
             
-            self.fetchPokemonGif()
+           self.delegate?.OnFinishedLoading()
                         
         })
     }
     
     func fetchPokemonGif()
-    {               
+    {
+         
         if let url = URL(string: self.pokemon.pokemon_gifsrc) {
             let urlImage = ZGIFImage.image(url: url)
             self.pokemon_UIGif = urlImage

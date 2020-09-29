@@ -8,8 +8,10 @@
 	<string>CCGradient</string>
 	<string>AlamofireImage</string>
 	<string>Dispatch</string>
+	<string>ZGIFImage</string>
 	<string>CoreGraphics</string>
 	<string>Alamofire</string>
+	<string>SwipeMenuViewController</string>
 	<string>SwiftUI</string>
 	<string>CoreServices</string>
 	<string>UIKit</string>
@@ -19,6 +21,8 @@
 	<string>WatchKit</string>
 	<string>XCTest</string>
 	<string>MobileCoreServices</string>
+	<string>ImageIO</string>
+	<string>SwipeViewController</string>
 	<string>Cocoa</string>
 	<string>PackageDescription</string>
 	<string>CommonCrypto</string>

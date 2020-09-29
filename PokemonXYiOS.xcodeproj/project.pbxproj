@@ -15,6 +15,11 @@
 		AB26B0782517DD550030D44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB26B0762517DD550030D44A /* Main.storyboard */; };
 		AB26B07A2517DD560030D44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB26B0792517DD560030D44A /* Assets.xcassets */; };
 		AB26B07D2517DD560030D44A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB26B07B2517DD560030D44A /* LaunchScreen.storyboard */; };
+		AB9F74862520CC35008D483A /* SwipeMenuViewController in Frameworks */ = {isa = PBXBuildFile; productRef = AB9F74852520CC35008D483A /* SwipeMenuViewController */; };
+		AB9F74882520FAD9008D483A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F74872520FAD9008D483A /* AboutViewController.swift */; };
+		AB9F748A25215A7A008D483A /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F748925215A7A008D483A /* ContentViewController.swift */; };
+		AB9F748C2522A491008D483A /* TypeSymbolCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F748B2522A491008D483A /* TypeSymbolCollectionViewCell.swift */; };
+		AB9F748F2522CB8B008D483A /* WeaknessTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F748E2522CB8B008D483A /* WeaknessTypeCollectionViewCell.swift */; };
 		ABB787FC2517DE8300671AB9 /* PokeBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB787FB2517DE8300671AB9 /* PokeBank.swift */; };
 		ABB787FF2517DEAC00671AB9 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB787FE2517DEAC00671AB9 /* Pokemon.swift */; };
 		ABB788022517DF5400671AB9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ABB788012517DF5400671AB9 /* Alamofire */; };
@@ -36,6 +41,10 @@
 		AB26B0792517DD560030D44A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB26B07C2517DD560030D44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB26B07E2517DD560030D44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB9F74872520FAD9008D483A /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		AB9F748925215A7A008D483A /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		AB9F748B2522A491008D483A /* TypeSymbolCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSymbolCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB9F748E2522CB8B008D483A /* WeaknessTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaknessTypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		ABB787FB2517DE8300671AB9 /* PokeBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeBank.swift; sourceTree = "<group>"; };
 		ABB787FE2517DEAC00671AB9 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		ABC21089251ACBEB004F2DAA /* segoe-ui-semibold-2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "segoe-ui-semibold-2.ttf"; sourceTree = "<group>"; };
@@ -52,6 +61,7 @@
 				ABB788022517DF5400671AB9 /* Alamofire in Frameworks */,
 				03662F3D19DC9FACD8A9A2D6 /* Pods_PokemonXYiOS.framework in Frameworks */,
 				ABEC26D325196C8C001E40B0 /* AlamofireImage in Frameworks */,
+				AB9F74862520CC35008D483A /* SwipeMenuViewController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +90,7 @@
 			children = (
 				AB1E4DDC2518118800287D29 /* PokemonListTableViewController.swift */,
 				ABC2108B251F3140004F2DAA /* PokemonReviewViewController.swift */,
+				AB9F74872520FAD9008D483A /* AboutViewController.swift */,
 			);
 			path = PokedexViews;
 			sourceTree = "<group>";
@@ -149,6 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				ABEC26CF25195960001E40B0 /* PokemonIDCardTableViewCell.swift */,
+				AB9F748925215A7A008D483A /* ContentViewController.swift */,
+				AB9F748B2522A491008D483A /* TypeSymbolCollectionViewCell.swift */,
+				AB9F748E2522CB8B008D483A /* WeaknessTypeCollectionViewCell.swift */,
 			);
 			path = UIComponentsScripts;
 			sourceTree = "<group>";
@@ -174,6 +188,7 @@
 			packageProductDependencies = (
 				ABB788012517DF5400671AB9 /* Alamofire */,
 				ABEC26D225196C8C001E40B0 /* AlamofireImage */,
+				AB9F74852520CC35008D483A /* SwipeMenuViewController */,
 			);
 			productName = PokemonXYiOS;
 			productReference = AB26B06D2517DD550030D44A /* PokemonXYiOS.app */;
@@ -206,6 +221,7 @@
 			packageReferences = (
 				ABB788002517DF5400671AB9 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				ABEC26D125196C8C001E40B0 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+				AB9F74842520CC35008D483A /* XCRemoteSwiftPackageReference "SwipeMenuViewController" */,
 			);
 			productRefGroup = AB26B06E2517DD550030D44A /* Products */;
 			projectDirPath = "";
@@ -277,12 +293,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9F748A25215A7A008D483A /* ContentViewController.swift in Sources */,
 				ABB787FF2517DEAC00671AB9 /* Pokemon.swift in Sources */,
 				ABEC26D025195960001E40B0 /* PokemonIDCardTableViewCell.swift in Sources */,
 				ABC2108C251F3140004F2DAA /* PokemonReviewViewController.swift in Sources */,
+				AB9F74882520FAD9008D483A /* AboutViewController.swift in Sources */,
+				AB9F748C2522A491008D483A /* TypeSymbolCollectionViewCell.swift in Sources */,
 				AB1E4DDD2518118800287D29 /* PokemonListTableViewController.swift in Sources */,
 				ABB787FC2517DE8300671AB9 /* PokeBank.swift in Sources */,
 				AB26B0752517DD550030D44A /* ViewController.swift in Sources */,
+				AB9F748F2522CB8B008D483A /* WeaknessTypeCollectionViewCell.swift in Sources */,
 				AB26B0712517DD550030D44A /* AppDelegate.swift in Sources */,
 				AB26B0732517DD550030D44A /* SceneDelegate.swift in Sources */,
 			);
@@ -484,6 +504,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AB9F74842520CC35008D483A /* XCRemoteSwiftPackageReference "SwipeMenuViewController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yysskk/SwipeMenuViewController";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
 		ABB788002517DF5400671AB9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -503,6 +531,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AB9F74852520CC35008D483A /* SwipeMenuViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB9F74842520CC35008D483A /* XCRemoteSwiftPackageReference "SwipeMenuViewController" */;
+			productName = SwipeMenuViewController;
+		};
 		ABB788012517DF5400671AB9 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ABB788002517DF5400671AB9 /* XCRemoteSwiftPackageReference "Alamofire" */;

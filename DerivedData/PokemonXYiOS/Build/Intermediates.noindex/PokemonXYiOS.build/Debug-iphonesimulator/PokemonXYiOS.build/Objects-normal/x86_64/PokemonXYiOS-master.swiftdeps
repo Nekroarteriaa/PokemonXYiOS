@@ -1,12 +1,16 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
-options: "2af40e56f3ad523f1069f1035af24663"
-build_time: [1601182181, 613293000]
+options: "821db0e9865046555e4a32891ca1ec25"
+build_time: [1601353003, 558984000]
 inputs:
-  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/Model/Pokemon.swift": [1601182175, 35607125]
-  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/UIComponentsScripts/PokemonIDCardTableViewCell.swift": [1601176023, 446518102]
-  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/PokemonReviewViewController.swift": [1601180622, 615872157]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/UIComponentsScripts/ContentViewController.swift": [1601255531, 893452009]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/Model/Pokemon.swift": [1601216311, 757464492]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/UIComponentsScripts/PokemonIDCardTableViewCell.swift": [1601202614, 232214074]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/PokemonReviewViewController.swift": [1601347873, 254867793]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/AboutViewController.swift": [1601352970, 758289542]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/UIComponentsScripts/TypeSymbolCollectionViewCell.swift": [1601344636, 453278860]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/PokemonListTableViewController.swift": [1601121513, 751364231]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/Pokebank/PokeBank.swift": [1601121727, 608970523]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/ViewController.swift": [1601179401, 661002984]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/UIComponentsScripts/WeaknessTypeCollectionViewCell.swift": [1601344896, 995559763]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/AppDelegate.swift": [1600628181, 825604439]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/SceneDelegate.swift": [1600628181, 836176872]

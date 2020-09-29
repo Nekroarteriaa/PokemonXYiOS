@@ -186,6 +186,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
 @import Foundation;
 @import UIKit;
 #endif
@@ -205,6 +206,33 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class UILabel;
+@class UICollectionView;
+@class UICollectionViewCell;
+@class UICollectionViewLayout;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC12PokemonXYiOS19AboutViewController")
+@interface AboutViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified PokemonDescriptionLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified PokemonHeightLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified CategoryLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified PokemonWeightLabel;
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified typeBadgeCollectionView;
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified weaknessBadgeCollectionView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified MalePercentageLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified FemalePercentageLabel;
+- (void)viewDidLoad;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
 @class UIApplication;
 @class UISceneSession;
 @class UISceneConnectionOptions;
@@ -218,9 +246,15 @@ SWIFT_CLASS("_TtC12PokemonXYiOS11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC12PokemonXYiOS21ContentViewController")
+@interface ContentViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIImageView;
-@class UILabel;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC12PokemonXYiOS26PokemonIDCardTableViewCell")
 @interface PokemonIDCardTableViewCell : UITableViewCell
@@ -240,7 +274,6 @@ SWIFT_CLASS("_TtC12PokemonXYiOS26PokemonIDCardTableViewCell")
 
 
 @class UITableView;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC12PokemonXYiOS30PokemonListTableViewController")
 @interface PokemonListTableViewController : UITableViewController
@@ -254,14 +287,22 @@ SWIFT_CLASS("_TtC12PokemonXYiOS30PokemonListTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class SwipeMenuView;
 
 SWIFT_CLASS("_TtC12PokemonXYiOS27PokemonReviewViewController")
 @interface PokemonReviewViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pokemonIDImageProfile;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pokemonIDNumberLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pokemonNameLabel;
+@property (nonatomic, weak) IBOutlet SwipeMenuView * _Null_unspecified swipeView;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+
 
 
 
@@ -278,6 +319,14 @@ SWIFT_CLASS("_TtC12PokemonXYiOS13SceneDelegate")
 - (void)sceneWillEnterForeground:(UIScene * _Nonnull)scene;
 - (void)sceneDidEnterBackground:(UIScene * _Nonnull)scene;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12PokemonXYiOS28TypeSymbolCollectionViewCell")
+@interface TypeSymbolCollectionViewCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified badgeImageView;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -298,6 +347,14 @@ SWIFT_CLASS("_TtC12PokemonXYiOS14ViewController")
 @end
 
 
+
+
+SWIFT_CLASS("_TtC12PokemonXYiOS30WeaknessTypeCollectionViewCell")
+@interface WeaknessTypeCollectionViewCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified WeaknessImageView;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
