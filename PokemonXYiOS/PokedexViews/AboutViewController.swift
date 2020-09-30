@@ -171,4 +171,11 @@ extension AboutViewController
         let weightInKilos = Float(formatted)
         return weightInKilos!
     }
+    
+    
+    func setSelectedPokemon(pokemon: PokemonObject)
+    {
+        selectedPokemon = pokemon
+        setupUIContent()
+    }
 }

@@ -13,9 +13,11 @@ provides-member:
 - ["12PokemonXYiOS0A6ObjectC", ""]
 provides-dynamic-lookup:
 - "delegate"
+- "fetchEvolvesGif"
 - "fetchPokemonGif"
 - "fetchPokemonImage"
 - "pokemon"
+- "pokemon_EvolvesUIGif"
 - "pokemon_UIGif"
 - "pokemon_UIImage"
 depends-top-level:
@@ -32,6 +34,7 @@ depends-top-level:
 - "Int"
 - !private "IntegerLiteralType"
 - "NSDictionary"
+- !private "PokeBank"
 - "Pokemon"
 - "PokemonObject"
 - "String"
@@ -43,9 +46,13 @@ depends-top-level:
 - !private "~="
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
+- !private ["9Alamofire0A8ExtendedP", "append"]
+- !private ["Sa", "append"]
+- !private ["SK", "append"]
 - !private ["SK", "lowercased"]
 - !private ["SK", "replacingOccurrences"]
 - !private ["Sz", "init"]
+- !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "lowercased"]
 - !private ["s7CVarArgP", "replacingOccurrences"]
@@ -60,14 +67,17 @@ depends-member:
 - ["s9CodingKeyP", "init"]
 - ["s9CodingKeyP", "intValue"]
 - ["s9CodingKeyP", "stringValue"]
+- !private ["Sl", "append"]
 - !private ["Sl", "lowercased"]
 - !private ["Sl", "replacingOccurrences"]
 - !private ["SL", "init"]
 - !private ["SL", "lowercased"]
 - !private ["SL", "replacingOccurrences"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
 - ["s28CustomDebugStringConvertibleP", "=="]
 - !private ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
 - ["s28CustomDebugStringConvertibleP", "debugDescription"]
 - ["s28CustomDebugStringConvertibleP", "description"]
 - ["s28CustomDebugStringConvertibleP", "hash"]
@@ -79,6 +89,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "result"]
 - ["s28CustomDebugStringConvertibleP", "stringValue"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "lowercased"]
 - !private ["s17CustomReflectableP", "replacingOccurrences"]
@@ -86,6 +97,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "=="]
 - !private ["s23CustomStringConvertibleP", ""]
 - ["s23CustomStringConvertibleP", "_rawHashValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - ["s23CustomStringConvertibleP", "debugDescription"]
@@ -100,11 +112,13 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "result"]
 - ["s23CustomStringConvertibleP", "stringValue"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["10Foundation12DataProtocolP", "append"]
 - !private ["9Alamofire11DataRequestC", "responseImage"]
 - !private ["9Alamofire12DataResponseV", "result"]
 - !private ["Se", "Int"]
 - ["Se", ""]
 - !private ["Se", "abilities"]
+- !private ["Se", "append"]
 - !private ["Se", "attack"]
 - !private ["Se", "base_exp"]
 - !private ["Se", "category"]
@@ -140,12 +154,14 @@ depends-member:
 - !private ["s7DecoderP", "container"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "append"]
 - !private ["SE", "init"]
 - !private ["SE", "lowercased"]
 - !private ["SE", "replacingOccurrences"]
 - ["SQ", "=="]
 - !private ["SQ", ""]
 - ["SQ", "_rawHashValue"]
+- !private ["SQ", "append"]
 - ["SQ", "debugDescription"]
 - ["SQ", "description"]
 - ["SQ", "hash"]
@@ -158,6 +174,7 @@ depends-member:
 - ["SQ", "stringValue"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "success"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "lowercased"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "replacingOccurrences"]
@@ -173,6 +190,7 @@ depends-member:
 - ["SH", "=="]
 - !private ["SH", ""]
 - ["SH", "_rawHashValue"]
+- !private ["SH", "append"]
 - ["SH", "debugDescription"]
 - ["SH", "description"]
 - ["SH", "hash"]
@@ -195,6 +213,8 @@ depends-member:
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "lowercased"]
 - !private ["s10MirrorPathP", "replacingOccurrences"]
+- !private ["SM", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
 - !private ["So8NSCodingP", "lowercased"]
 - !private ["So8NSCodingP", "replacingOccurrences"]
 - !private ["So8NSCodingP", "subscript"]
@@ -222,6 +242,8 @@ depends-member:
 - !private ["So8NSStringC", "lowercased"]
 - !private ["So8NSStringC", "replacingOccurrences"]
 - !private ["Sj", "init"]
+- !private ["12PokemonXYiOS8PokeBankC", "getPokemonGifURL"]
+- !private ["12PokemonXYiOS8PokeBankC", "shared"]
 - ["12PokemonXYiOS0A0V", "Int"]
 - ["12PokemonXYiOS0A0V", "NSDictionary"]
 - ["12PokemonXYiOS0A0V", "String"]
@@ -259,18 +281,24 @@ depends-member:
 - ["12PokemonXYiOS0A0V", "ydescription"]
 - !private ["12PokemonXYiOS0A6ObjectC", "AF"]
 - ["12PokemonXYiOS0A6ObjectC", "FetchedPokemon"]
+- !private ["12PokemonXYiOS0A6ObjectC", "PokeBank"]
 - ["12PokemonXYiOS0A6ObjectC", "Pokemon"]
+- ["12PokemonXYiOS0A6ObjectC", "String"]
 - ["12PokemonXYiOS0A6ObjectC", "UIImage"]
 - !private ["12PokemonXYiOS0A6ObjectC", "URL"]
 - !private ["12PokemonXYiOS0A6ObjectC", "ZGIFImage"]
 - ["12PokemonXYiOS0A6ObjectC", "deinit"]
 - ["12PokemonXYiOS0A6ObjectC", "delegate"]
+- ["12PokemonXYiOS0A6ObjectC", "fetchEvolvesGif"]
 - ["12PokemonXYiOS0A6ObjectC", "fetchPokemonGif"]
 - ["12PokemonXYiOS0A6ObjectC", "fetchPokemonImage"]
 - ["12PokemonXYiOS0A6ObjectC", "init"]
 - ["12PokemonXYiOS0A6ObjectC", "pokemon"]
+- ["12PokemonXYiOS0A6ObjectC", "pokemon_EvolvesUIGif"]
 - ["12PokemonXYiOS0A6ObjectC", "pokemon_UIGif"]
 - ["12PokemonXYiOS0A6ObjectC", "pokemon_UIImage"]
+- !private ["Sk", "append"]
+- !private ["Sm", "append"]
 - !private ["Sm", "lowercased"]
 - !private ["Sm", "replacingOccurrences"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
@@ -278,6 +306,7 @@ depends-member:
 - !private ["9Alamofire15RequestDelegateP", "request"]
 - !private ["s6ResultO", "success"]
 - !private ["s10SIMDScalarP", "init"]
+- !private ["ST", "append"]
 - !private ["ST", "lowercased"]
 - !private ["ST", "replacingOccurrences"]
 - !private ["ST", "subscript"]
@@ -303,9 +332,11 @@ depends-member:
 - !private ["9Alamofire14URLConvertibleP", "lowercased"]
 - !private ["9Alamofire14URLConvertibleP", "replacingOccurrences"]
 - !private ["9ZGIFImageAAC", "image"]
+- !private ["s14_ArrayProtocolP", "append"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "lowercased"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "replacingOccurrences"]
+- !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "lowercased"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "replacingOccurrences"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
@@ -314,8 +345,10 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "lowercased"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "replacingOccurrences"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "append"]
 - !private ["s19_HasContiguousBytesP", "lowercased"]
 - !private ["s19_HasContiguousBytesP", "replacingOccurrences"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "lowercased"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "replacingOccurrences"]
@@ -326,20 +359,25 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "lowercased"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "replacingOccurrences"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "lowercased"]
 - !private ["s21_ObjectiveCBridgeableP", "replacingOccurrences"]
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
+- !private "9Alamofire0A8ExtendedP"
+- !private "Sa"
 - !private "SK"
 - !private "Sz"
 - !private "s7CVarArgP"
 - "s9CodingKeyP"
 - !private "Sl"
 - !private "SL"
+- !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
 - !private "9Alamofire11DataRequestC"
 - !private "9Alamofire12DataResponseV"
 - "Se"
@@ -347,6 +385,7 @@ depends-nominal:
 - !private "s26DefaultStringInterpolationV"
 - !private "SE"
 - "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
@@ -362,6 +401,8 @@ depends-nominal:
 - !private "s30KeyedDecodingContainerProtocolP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So12NSDictionaryC"
@@ -374,8 +415,10 @@ depends-nominal:
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
 - !private "Sj"
+- !private "12PokemonXYiOS8PokeBankC"
 - "12PokemonXYiOS0A0V"
 - "12PokemonXYiOS0A6ObjectC"
+- !private "Sk"
 - !private "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "9Alamofire7RequestC"
@@ -396,7 +439,9 @@ depends-nominal:
 - !private "10Foundation3URLV"
 - !private "9Alamofire14URLConvertibleP"
 - !private "9ZGIFImageAAC"
+- !private "s14_ArrayProtocolP"
 - !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
@@ -425,6 +470,7 @@ depends-external:
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/AlamofireImage.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/Alamofire.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/SwipeMenuViewController.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/CCGradient/CCGradient.framework/Modules/CCGradient.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/ZGIFImage/ZGIFImage.framework/Headers/ZGIFImage-umbrella.h"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/CCGradient/CCGradient.framework/Headers/CCGradient-umbrella.h"
@@ -445,4 +491,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "80725228d9cdc47a1fbe397b80e663e9"
+interface-hash: "923fee343aedaceff9d7a0cb699dbe3f"

@@ -73,6 +73,25 @@ UICollectionViewDelegateFlowLayout {
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        var clickedPokemon: PokemonObject?
+        
+        if collectionView == PokemonGifCollectionView
+        {
+            clickedPokemon = PokeBank.shared.getPokemonbyIDNumber(pokemonID: selectedPokemon!.pokemon.evolutions[indexPath.row])
+            
+        }
+        
+        else
+        {
+            clickedPokemon = PokeBank.shared.getPokemonbyIDNumber(pokemonID: selectedPokemon!.pokemon.evolutions[indexPath.row + 2])
+        }
+        
+        reviewViewController!.setDesiredPokemon(pkmnObj: clickedPokemon!)
+        aboutViewController!.setSelectedPokemon(pokemon: clickedPokemon!)
+    }
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
 

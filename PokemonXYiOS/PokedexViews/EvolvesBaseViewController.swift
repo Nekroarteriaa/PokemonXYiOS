@@ -12,7 +12,8 @@ import UIKit
 
     @IBOutlet weak var PokemonGifCollectionView: UICollectionView!
     var selectedPokemon: PokemonObject?
-    
+    var reviewViewController: PokemonReviewViewController?
+    var aboutViewController: AboutViewController?
 
     /*
     // MARK: - Navigation

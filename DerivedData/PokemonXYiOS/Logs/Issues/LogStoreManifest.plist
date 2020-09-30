@@ -34,62 +34,6 @@
 			<key>uniqueIdentifier</key>
 			<string>00909204-5DF3-4C0B-B167-E238C8C408AD</string>
 		</dict>
-		<key>0D69339A-BC54-4D45-B3C6-7BCDB8FE5DA6</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
-			<key>fileName</key>
-			<string>0D69339A-BC54-4D45-B3C6-7BCDB8FE5DA6.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>CCGradient-aaqgibglwxrfgsaxheajhivzpayy</string>
-			<key>timeStartedRecording</key>
-			<real>623114282.900828</real>
-			<key>timeStoppedRecording</key>
-			<real>623114283.09001601</real>
-			<key>title</key>
-			<string>Build target CCGradient</string>
-			<key>uniqueIdentifier</key>
-			<string>0D69339A-BC54-4D45-B3C6-7BCDB8FE5DA6</string>
-		</dict>
-		<key>4737BF70-46E2-498C-A7A5-992A2345B209</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
-			<key>fileName</key>
-			<string>4737BF70-46E2-498C-A7A5-992A2345B209.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>ZGIFImage-aaqgibglwxrfgsaxheajhivzpayy</string>
-			<key>timeStartedRecording</key>
-			<real>623114283.08283806</real>
-			<key>timeStoppedRecording</key>
-			<real>623114283.08995104</real>
-			<key>title</key>
-			<string>Build target ZGIFImage</string>
-			<key>uniqueIdentifier</key>
-			<string>4737BF70-46E2-498C-A7A5-992A2345B209</string>
-		</dict>
 		<key>47F67B7B-BCEB-46C3-BEC0-4CFA91F25155</key>
 		<dict>
 			<key>className</key>
@@ -117,6 +61,90 @@
 			<string>Build target Pods-PokemonXYiOS</string>
 			<key>uniqueIdentifier</key>
 			<string>47F67B7B-BCEB-46C3-BEC0-4CFA91F25155</string>
+		</dict>
+		<key>5A339E35-AAA5-4A66-80D3-C61384C91F68</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>5A339E35-AAA5-4A66-80D3-C61384C91F68.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>CCGradient-aaqgibglwxrfgsaxheajhivzpayy</string>
+			<key>timeStartedRecording</key>
+			<real>623141474.65476096</real>
+			<key>timeStoppedRecording</key>
+			<real>623141474.67205</real>
+			<key>title</key>
+			<string>Build target CCGradient</string>
+			<key>uniqueIdentifier</key>
+			<string>5A339E35-AAA5-4A66-80D3-C61384C91F68</string>
+		</dict>
+		<key>BB276A46-3E24-41DB-8ECE-FA71DD4E3EC3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>BB276A46-3E24-41DB-8ECE-FA71DD4E3EC3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>ZGIFImage-aaqgibglwxrfgsaxheajhivzpayy</string>
+			<key>timeStartedRecording</key>
+			<real>623141474.663836</real>
+			<key>timeStoppedRecording</key>
+			<real>623141474.67199802</real>
+			<key>title</key>
+			<string>Build target ZGIFImage</string>
+			<key>uniqueIdentifier</key>
+			<string>BB276A46-3E24-41DB-8ECE-FA71DD4E3EC3</string>
+		</dict>
+		<key>F8E58972-3BEF-41DD-A03D-6A94B0679A17</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>F8E58972-3BEF-41DD-A03D-6A94B0679A17.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>PokemonXYiOS-dzcqhiachbqvwfbxyplzzxsagptb</string>
+			<key>timeStartedRecording</key>
+			<real>623154980.403494</real>
+			<key>timeStoppedRecording</key>
+			<real>623154982.37234104</real>
+			<key>title</key>
+			<string>Build target PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>F8E58972-3BEF-41DD-A03D-6A94B0679A17</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

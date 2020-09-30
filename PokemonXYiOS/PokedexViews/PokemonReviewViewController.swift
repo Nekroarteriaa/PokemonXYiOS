@@ -17,6 +17,7 @@ class PokemonReviewViewController: UIViewController {
     var gradientView = CCGradientView()
      var backgroundGradient: [UIColor]?
     var desiredPokemon: PokemonObject?
+    
 
     @IBOutlet weak var pokemonIDImageProfile: UIImageView!
     @IBOutlet weak var pokemonIDNumberLabel: UILabel!
@@ -33,14 +34,7 @@ class PokemonReviewViewController: UIViewController {
         return aboutViewController
     }()
     
-    var evolves: EvolvesBaseViewController? /*= {
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        
-        var evolvesViewController = storyboard.instantiateViewController(identifier: "PokemonEvolvesView") as! NormalEvolveChainViewController
-        
-        return evolvesViewController
-    }()*/
-    
+    var evolves: EvolvesBaseViewController?
     
     let vc3 = ContentViewController()
     let vc4 = ContentViewController()
@@ -59,7 +53,13 @@ class PokemonReviewViewController: UIViewController {
         {
             if desiredPokemon!.pokemon.evolutions.count > 4
             {
-                
+                self.evolves = {
+                    let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                    
+                    let evolvesViewController = storyboard.instantiateViewController(identifier: "PokemonEeveeEvolvesView") as! EeveeEvolvesViewController
+                    
+                    return evolvesViewController
+                }()
             }
             
             else
@@ -88,6 +88,8 @@ class PokemonReviewViewController: UIViewController {
         
         vc2 = self.evolves
         vc2!.selectedPokemon = desiredPokemon
+        vc2!.reviewViewController = self
+        vc2!.aboutViewController = self.about
         
         views.append(vc)
         views.append(vc2!)
@@ -130,9 +132,18 @@ class PokemonReviewViewController: UIViewController {
         desiredPokemon?.fetchPokemonGif()
         pokemonIDImageProfile.image = desiredPokemon?.pokemon_UIGif!
         
-        desiredPokemon?.fetchEvolvesGif(evolvesList: desiredPokemon!.pokemon.evolutions)
+        if desiredPokemon!.pokemon.evolutions.count < 5
+        {
+            desiredPokemon?.fetchEvolvesGif(evolvesList: desiredPokemon!.pokemon.evolutions)
+        }
         
+        else
+        {
+            let _orderedEvolves = PokeBank.shared.orderingEeveeEvolves()
+            desiredPokemon?.fetchEvolvesGif(evolvesList: _orderedEvolves)
+        }
         
+ 
         pokemonIDNumberLabel.text  = desiredPokemon?.pokemon.id
         pokemonNameLabel.text = desiredPokemon?.pokemon.name
         pokemonNameLabel.setCharacterSpacing(1.5)
@@ -250,4 +261,5 @@ extension PokemonReviewViewController: SwipeMenuViewDataSource {
         return views[index]
     }
 }
+
 

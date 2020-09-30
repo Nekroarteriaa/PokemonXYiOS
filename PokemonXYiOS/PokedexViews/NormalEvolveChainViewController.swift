@@ -31,7 +31,16 @@ class NormalEvolveChainViewController: EvolvesBaseViewController,UICollectionVie
         
         cellEvolutions.PokemonGifHolderImageVIew.image = selectedPokemon?.pokemon_EvolvesUIGif[indexPath.row]
         
+        
         return cellEvolutions
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let clickedPokemon = PokeBank.shared.getPokemonbyIDNumber(pokemonID: selectedPokemon!.pokemon.evolutions[indexPath.row])
+        
+        reviewViewController!.setDesiredPokemon(pkmnObj: clickedPokemon)
+        aboutViewController!.setSelectedPokemon(pokemon: clickedPokemon)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

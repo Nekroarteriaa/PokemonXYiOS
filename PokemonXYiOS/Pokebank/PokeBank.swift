@@ -15,6 +15,45 @@ class PokeBank{
     
     var PokemonBank: [PokemonObject] = []
     
+    
+    func getPokemon(pokemonName: String) -> PokemonObject
+    {
+        var pkmn: PokemonObject?
+        
+        for pkmN in PokemonBank {
+            
+            if pkmN.pokemon.name == pokemonName
+            {
+                pkmn = pkmN
+            }
+            
+        }
+        return pkmn!
+    }
+    
+    func getPokemonbyIDNumber(pokemonID: String) -> PokemonObject
+    {
+        var pkmn: PokemonObject?
+        
+        for pkmN in PokemonBank {
+            
+            if pkmN.pokemon.id == pokemonID
+            {
+                pkmn = pkmN
+            }
+            
+        }
+        return pkmn!
+    }
+    
+    
+    func orderingEeveeEvolves()-> [String]
+    {
+        let _newEeveeEvolves: [String] = ["#134","#135","#136","#197","#133","#196", "#471","#470","#700"]
+        
+        return _newEeveeEvolves
+    }
+    
     func getPokemonGifURL(pokemonID: String) -> String
     {
         var gifURL : String = ""

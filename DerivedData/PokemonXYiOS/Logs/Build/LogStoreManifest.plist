@@ -6,6 +6,40 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>05C1D957-F62E-4C09-8DA8-FAA11CC53E87</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>05C1D957-F62E-4C09-8DA8-FAA11CC53E87.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623154786.12177098</real>
+			<key>timeStoppedRecording</key>
+			<real>623154787.21192098</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>05C1D957-F62E-4C09-8DA8-FAA11CC53E87</string>
+		</dict>
 		<key>060BBE2D-68EE-43A5-A993-04FB3681234D</key>
 		<dict>
 			<key>className</key>
@@ -244,6 +278,40 @@
 			<key>uniqueIdentifier</key>
 			<string>3B6094AF-D4D6-406D-B0AB-17835E0E8E73</string>
 		</dict>
+		<key>3BF92A09-2AE8-4E8C-9181-CF296984DBA5</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3BF92A09-2AE8-4E8C-9181-CF296984DBA5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623150644.37930799</real>
+			<key>timeStoppedRecording</key>
+			<real>623150649.91389799</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>3BF92A09-2AE8-4E8C-9181-CF296984DBA5</string>
+		</dict>
 		<key>3E836299-900D-451E-BAF3-DA3CC672C7FE</key>
 		<dict>
 			<key>className</key>
@@ -346,6 +414,40 @@
 			<key>uniqueIdentifier</key>
 			<string>44A0D70B-70E2-4C55-8825-D2FF28D8832D</string>
 		</dict>
+		<key>4AC34D2A-79A6-42C6-96C7-6CA0440C37B3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4AC34D2A-79A6-42C6-96C7-6CA0440C37B3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623151033.42989004</real>
+			<key>timeStoppedRecording</key>
+			<real>623151035.77810395</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>4AC34D2A-79A6-42C6-96C7-6CA0440C37B3</string>
+		</dict>
 		<key>4E53A246-45A9-4F21-8198-045468FAEB87</key>
 		<dict>
 			<key>className</key>
@@ -380,6 +482,74 @@
 			<key>uniqueIdentifier</key>
 			<string>4E53A246-45A9-4F21-8198-045468FAEB87</string>
 		</dict>
+		<key>55EC17EF-D81E-4589-A26C-C3734D0A1154</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>55EC17EF-D81E-4589-A26C-C3734D0A1154.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623154178.14975095</real>
+			<key>timeStoppedRecording</key>
+			<real>623154180.32713497</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>55EC17EF-D81E-4589-A26C-C3734D0A1154</string>
+		</dict>
+		<key>5B6A88BD-7CB9-48E3-AD1D-73D65E2A48DB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5B6A88BD-7CB9-48E3-AD1D-73D65E2A48DB.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623152223.50380003</real>
+			<key>timeStoppedRecording</key>
+			<real>623152227.73617804</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>5B6A88BD-7CB9-48E3-AD1D-73D65E2A48DB</string>
+		</dict>
 		<key>64E40B45-D9D8-4431-B481-FFD17ACD5D20</key>
 		<dict>
 			<key>className</key>
@@ -413,6 +583,40 @@
 			<string>Build PokemonXYiOS</string>
 			<key>uniqueIdentifier</key>
 			<string>64E40B45-D9D8-4431-B481-FFD17ACD5D20</string>
+		</dict>
+		<key>72836A6C-DEE4-4A10-BD99-7DBC2BF384FB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>72836A6C-DEE4-4A10-BD99-7DBC2BF384FB.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623145847.81636</real>
+			<key>timeStoppedRecording</key>
+			<real>623145857.07201099</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>72836A6C-DEE4-4A10-BD99-7DBC2BF384FB</string>
 		</dict>
 		<key>76733C9B-4449-4DFC-AA59-9CD28674B9F1</key>
 		<dict>
@@ -482,6 +686,40 @@
 			<key>uniqueIdentifier</key>
 			<string>809FA818-8B95-444A-B833-89B28AD433B7</string>
 		</dict>
+		<key>853EA5F6-B666-42B6-A3F2-071D7E0690AE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>853EA5F6-B666-42B6-A3F2-071D7E0690AE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623154980.05711997</real>
+			<key>timeStoppedRecording</key>
+			<real>623154982.39212</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>853EA5F6-B666-42B6-A3F2-071D7E0690AE</string>
+		</dict>
 		<key>88FF3A87-5245-4E96-8323-6811CB174F48</key>
 		<dict>
 			<key>className</key>
@@ -515,6 +753,40 @@
 			<string>Build PokemonXYiOS</string>
 			<key>uniqueIdentifier</key>
 			<string>88FF3A87-5245-4E96-8323-6811CB174F48</string>
+		</dict>
+		<key>8F7054FB-2394-47C2-91EC-3675A01D6A48</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8F7054FB-2394-47C2-91EC-3675A01D6A48.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623154417.11782503</real>
+			<key>timeStoppedRecording</key>
+			<real>623154420.22330201</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>8F7054FB-2394-47C2-91EC-3675A01D6A48</string>
 		</dict>
 		<key>90EC80CE-8B59-4C93-80C2-166C4A574C78</key>
 		<dict>
@@ -550,6 +822,40 @@
 			<key>uniqueIdentifier</key>
 			<string>90EC80CE-8B59-4C93-80C2-166C4A574C78</string>
 		</dict>
+		<key>9165EB81-CAD6-4A90-8A51-1395A51FFC0B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9165EB81-CAD6-4A90-8A51-1395A51FFC0B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623154845.93221796</real>
+			<key>timeStoppedRecording</key>
+			<real>623154848.15937304</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>9165EB81-CAD6-4A90-8A51-1395A51FFC0B</string>
+		</dict>
 		<key>9651D727-304E-4E44-888B-6FEDE16B9836</key>
 		<dict>
 			<key>className</key>
@@ -584,6 +890,74 @@
 			<key>uniqueIdentifier</key>
 			<string>9651D727-304E-4E44-888B-6FEDE16B9836</string>
 		</dict>
+		<key>9B05FD0C-86A3-4492-AAE0-68881D0323EE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9B05FD0C-86A3-4492-AAE0-68881D0323EE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623153252.34102201</real>
+			<key>timeStoppedRecording</key>
+			<real>623153260.48971605</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>9B05FD0C-86A3-4492-AAE0-68881D0323EE</string>
+		</dict>
+		<key>A0DC6D8B-8425-4D1D-A4FF-A4E7C0894AD1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A0DC6D8B-8425-4D1D-A4FF-A4E7C0894AD1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623145339.22383106</real>
+			<key>timeStoppedRecording</key>
+			<real>623145345.53267097</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>A0DC6D8B-8425-4D1D-A4FF-A4E7C0894AD1</string>
+		</dict>
 		<key>A7F2630C-95EF-480A-B061-23D3D02EE056</key>
 		<dict>
 			<key>className</key>
@@ -617,6 +991,40 @@
 			<string>Build PokemonXYiOS</string>
 			<key>uniqueIdentifier</key>
 			<string>A7F2630C-95EF-480A-B061-23D3D02EE056</string>
+		</dict>
+		<key>AD86C86B-C8AA-4730-B48F-254C22B5FE2C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AD86C86B-C8AA-4730-B48F-254C22B5FE2C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623153857.68722403</real>
+			<key>timeStoppedRecording</key>
+			<real>623153860.98875499</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>AD86C86B-C8AA-4730-B48F-254C22B5FE2C</string>
 		</dict>
 		<key>B64B5BFE-4C7E-4999-9010-D77A8B4DD542</key>
 		<dict>
@@ -720,6 +1128,74 @@
 			<key>uniqueIdentifier</key>
 			<string>C051E005-2545-46CC-B4A1-DAE7B9DFCF8A</string>
 		</dict>
+		<key>C0F4DB60-126F-4820-8124-E1EFE8084A93</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C0F4DB60-126F-4820-8124-E1EFE8084A93.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623145114.72626102</real>
+			<key>timeStoppedRecording</key>
+			<real>623145121.84367502</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>C0F4DB60-126F-4820-8124-E1EFE8084A93</string>
+		</dict>
+		<key>C339B685-CDDB-4244-991E-CBE4805BE6BC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C339B685-CDDB-4244-991E-CBE4805BE6BC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623154105.29812503</real>
+			<key>timeStoppedRecording</key>
+			<real>623154109.31949306</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>C339B685-CDDB-4244-991E-CBE4805BE6BC</string>
+		</dict>
 		<key>C857EE7E-DF32-4F6E-8167-075C64F7ECFC</key>
 		<dict>
 			<key>className</key>
@@ -822,6 +1298,40 @@
 			<key>uniqueIdentifier</key>
 			<string>D03FB82A-0E36-4D72-A622-118C6562A98A</string>
 		</dict>
+		<key>DB037226-C2CF-428D-9F11-93CCC62A4667</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DB037226-C2CF-428D-9F11-93CCC62A4667.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623146331.12534904</real>
+			<key>timeStoppedRecording</key>
+			<real>623146338.91212702</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>DB037226-C2CF-428D-9F11-93CCC62A4667</string>
+		</dict>
 		<key>DB6AEF94-9C87-4538-8016-5D7B75057163</key>
 		<dict>
 			<key>className</key>
@@ -855,6 +1365,40 @@
 			<string>Build PokemonXYiOS</string>
 			<key>uniqueIdentifier</key>
 			<string>DB6AEF94-9C87-4538-8016-5D7B75057163</string>
+		</dict>
+		<key>DB7DF867-0801-4593-B9C8-5F46F18E1853</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DB7DF867-0801-4593-B9C8-5F46F18E1853.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623151151.93569303</real>
+			<key>timeStoppedRecording</key>
+			<real>623151154.20200002</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>DB7DF867-0801-4593-B9C8-5F46F18E1853</string>
 		</dict>
 		<key>DC0C30A3-B550-4886-85BE-ECF43CEEE9C2</key>
 		<dict>
@@ -923,6 +1467,74 @@
 			<string>Build PokemonXYiOS</string>
 			<key>uniqueIdentifier</key>
 			<string>E0331FCC-3305-4342-965F-D6BC9837E1A8</string>
+		</dict>
+		<key>E96E2F1E-B37F-41C7-941D-E5E773C5EFA2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E96E2F1E-B37F-41C7-941D-E5E773C5EFA2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623142041.90679801</real>
+			<key>timeStoppedRecording</key>
+			<real>623142044.18524003</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>E96E2F1E-B37F-41C7-941D-E5E773C5EFA2</string>
+		</dict>
+		<key>F435A8BD-99C0-4C19-9877-88BE6C1F4D34</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F435A8BD-99C0-4C19-9877-88BE6C1F4D34.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PokemonXYiOS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PokemonXYiOS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PokemonXYiOS</string>
+			<key>timeStartedRecording</key>
+			<real>623144935.97702599</real>
+			<key>timeStoppedRecording</key>
+			<real>623144947.85986304</real>
+			<key>title</key>
+			<string>Build PokemonXYiOS</string>
+			<key>uniqueIdentifier</key>
+			<string>F435A8BD-99C0-4C19-9877-88BE6C1F4D34</string>
 		</dict>
 		<key>FDB4C947-187B-429D-B914-38F8D59D958E</key>
 		<dict>

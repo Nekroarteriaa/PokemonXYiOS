@@ -11,4 +11,5 @@ import UIKit
 class PokemonEvolutionCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var PokemonGifHolderImageVIew: UIImageView!
+    
 }

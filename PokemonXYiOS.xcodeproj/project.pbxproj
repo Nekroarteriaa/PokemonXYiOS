@@ -15,6 +15,11 @@
 		AB26B0782517DD550030D44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB26B0762517DD550030D44A /* Main.storyboard */; };
 		AB26B07A2517DD560030D44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB26B0792517DD560030D44A /* Assets.xcassets */; };
 		AB26B07D2517DD560030D44A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB26B07B2517DD560030D44A /* LaunchScreen.storyboard */; };
+		AB3F8A612523B5B6006C86E8 /* NormalEvolveChainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3F8A602523B5B6006C86E8 /* NormalEvolveChainViewController.swift */; };
+		AB3F8A632523B8C7006C86E8 /* PokemonEvolutionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3F8A622523B8C7006C86E8 /* PokemonEvolutionCollectionViewCell.swift */; };
+		AB3F8A652523F4FD006C86E8 /* EvolvesBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3F8A642523F4FD006C86E8 /* EvolvesBaseViewController.swift */; };
+		AB3F8A672523F827006C86E8 /* ForthEvolvesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3F8A662523F827006C86E8 /* ForthEvolvesViewController.swift */; };
+		AB3F8A6925246259006C86E8 /* EeveeEvolvesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3F8A6825246259006C86E8 /* EeveeEvolvesViewController.swift */; };
 		AB9F74862520CC35008D483A /* SwipeMenuViewController in Frameworks */ = {isa = PBXBuildFile; productRef = AB9F74852520CC35008D483A /* SwipeMenuViewController */; };
 		AB9F74882520FAD9008D483A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F74872520FAD9008D483A /* AboutViewController.swift */; };
 		AB9F748A25215A7A008D483A /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F748925215A7A008D483A /* ContentViewController.swift */; };
@@ -41,6 +46,11 @@
 		AB26B0792517DD560030D44A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB26B07C2517DD560030D44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB26B07E2517DD560030D44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB3F8A602523B5B6006C86E8 /* NormalEvolveChainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalEvolveChainViewController.swift; sourceTree = "<group>"; };
+		AB3F8A622523B8C7006C86E8 /* PokemonEvolutionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonEvolutionCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB3F8A642523F4FD006C86E8 /* EvolvesBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolvesBaseViewController.swift; sourceTree = "<group>"; };
+		AB3F8A662523F827006C86E8 /* ForthEvolvesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthEvolvesViewController.swift; sourceTree = "<group>"; };
+		AB3F8A6825246259006C86E8 /* EeveeEvolvesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EeveeEvolvesViewController.swift; sourceTree = "<group>"; };
 		AB9F74872520FAD9008D483A /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		AB9F748925215A7A008D483A /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		AB9F748B2522A491008D483A /* TypeSymbolCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSymbolCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -91,6 +101,10 @@
 				AB1E4DDC2518118800287D29 /* PokemonListTableViewController.swift */,
 				ABC2108B251F3140004F2DAA /* PokemonReviewViewController.swift */,
 				AB9F74872520FAD9008D483A /* AboutViewController.swift */,
+				AB3F8A602523B5B6006C86E8 /* NormalEvolveChainViewController.swift */,
+				AB3F8A642523F4FD006C86E8 /* EvolvesBaseViewController.swift */,
+				AB3F8A662523F827006C86E8 /* ForthEvolvesViewController.swift */,
+				AB3F8A6825246259006C86E8 /* EeveeEvolvesViewController.swift */,
 			);
 			path = PokedexViews;
 			sourceTree = "<group>";
@@ -163,6 +177,7 @@
 				AB9F748925215A7A008D483A /* ContentViewController.swift */,
 				AB9F748B2522A491008D483A /* TypeSymbolCollectionViewCell.swift */,
 				AB9F748E2522CB8B008D483A /* WeaknessTypeCollectionViewCell.swift */,
+				AB3F8A622523B8C7006C86E8 /* PokemonEvolutionCollectionViewCell.swift */,
 			);
 			path = UIComponentsScripts;
 			sourceTree = "<group>";
@@ -295,16 +310,21 @@
 			files = (
 				AB9F748A25215A7A008D483A /* ContentViewController.swift in Sources */,
 				ABB787FF2517DEAC00671AB9 /* Pokemon.swift in Sources */,
+				AB3F8A672523F827006C86E8 /* ForthEvolvesViewController.swift in Sources */,
 				ABEC26D025195960001E40B0 /* PokemonIDCardTableViewCell.swift in Sources */,
 				ABC2108C251F3140004F2DAA /* PokemonReviewViewController.swift in Sources */,
 				AB9F74882520FAD9008D483A /* AboutViewController.swift in Sources */,
 				AB9F748C2522A491008D483A /* TypeSymbolCollectionViewCell.swift in Sources */,
+				AB3F8A632523B8C7006C86E8 /* PokemonEvolutionCollectionViewCell.swift in Sources */,
+				AB3F8A652523F4FD006C86E8 /* EvolvesBaseViewController.swift in Sources */,
+				AB3F8A612523B5B6006C86E8 /* NormalEvolveChainViewController.swift in Sources */,
 				AB1E4DDD2518118800287D29 /* PokemonListTableViewController.swift in Sources */,
 				ABB787FC2517DE8300671AB9 /* PokeBank.swift in Sources */,
 				AB26B0752517DD550030D44A /* ViewController.swift in Sources */,
 				AB9F748F2522CB8B008D483A /* WeaknessTypeCollectionViewCell.swift in Sources */,
 				AB26B0712517DD550030D44A /* AppDelegate.swift in Sources */,
 				AB26B0732517DD550030D44A /* SceneDelegate.swift in Sources */,
+				AB3F8A6925246259006C86E8 /* EeveeEvolvesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
