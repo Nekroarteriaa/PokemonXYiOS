@@ -472,6 +472,7 @@ depends-external:
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/Alamofire.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/SwipeMenuViewController.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/CCGradient/CCGradient.framework/Modules/CCGradient.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/MultiProgressView.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/ZGIFImage/ZGIFImage.framework/Headers/ZGIFImage-umbrella.h"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/CCGradient/CCGradient.framework/Headers/CCGradient-umbrella.h"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/ZGIFImage/ZGIFImage.framework/Headers/ZGIFImage-Swift.h"

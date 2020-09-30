@@ -35,12 +35,18 @@ class PokemonReviewViewController: UIViewController {
     }()
     
     var evolves: EvolvesBaseViewController?
-    
-    let vc3 = ContentViewController()
-    let vc4 = ContentViewController()
-    
     var views:[UIViewController] = []
     
+    var stats: StatsViewController = {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        var aboutViewController = storyboard.instantiateViewController(identifier: "PokemonStatsView") as! StatsViewController
+        
+        return aboutViewController
+    }()
+    
+    let vc4 = ContentViewController()
     
     override func viewDidLoad() {
         
@@ -90,6 +96,9 @@ class PokemonReviewViewController: UIViewController {
         vc2!.selectedPokemon = desiredPokemon
         vc2!.reviewViewController = self
         vc2!.aboutViewController = self.about
+        
+        let vc3 = self.stats
+        vc3.selectedPokemon = desiredPokemon
         
         views.append(vc)
         views.append(vc2!)
@@ -234,12 +243,14 @@ extension PokemonReviewViewController: SwipeMenuViewDelegate {
         
         switch toIndex {
         case 1:
-            return
+            stats.restartStatsBar()
         case 2:
-            vc3.view.backgroundColor = UIColor.red
+            stats.animateStatsBar()
         case 3:
             vc4.view.backgroundColor = UIColor.yellow
+            stats.restartStatsBar()
         default:
+            stats.restartStatsBar()
              return
         }
     }

@@ -20,6 +20,9 @@
 		AB3F8A652523F4FD006C86E8 /* EvolvesBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3F8A642523F4FD006C86E8 /* EvolvesBaseViewController.swift */; };
 		AB3F8A672523F827006C86E8 /* ForthEvolvesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3F8A662523F827006C86E8 /* ForthEvolvesViewController.swift */; };
 		AB3F8A6925246259006C86E8 /* EeveeEvolvesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3F8A6825246259006C86E8 /* EeveeEvolvesViewController.swift */; };
+		AB3F8A6C25249BA5006C86E8 /* MultiProgressView in Frameworks */ = {isa = PBXBuildFile; productRef = AB3F8A6B25249BA5006C86E8 /* MultiProgressView */; };
+		AB3F8A6E25249C46006C86E8 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3F8A6D25249C46006C86E8 /* StatsViewController.swift */; };
+		AB781E3C2524C44C002BC5EC /* MovesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB781E3B2524C44C002BC5EC /* MovesViewController.swift */; };
 		AB9F74862520CC35008D483A /* SwipeMenuViewController in Frameworks */ = {isa = PBXBuildFile; productRef = AB9F74852520CC35008D483A /* SwipeMenuViewController */; };
 		AB9F74882520FAD9008D483A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F74872520FAD9008D483A /* AboutViewController.swift */; };
 		AB9F748A25215A7A008D483A /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F748925215A7A008D483A /* ContentViewController.swift */; };
@@ -51,6 +54,8 @@
 		AB3F8A642523F4FD006C86E8 /* EvolvesBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolvesBaseViewController.swift; sourceTree = "<group>"; };
 		AB3F8A662523F827006C86E8 /* ForthEvolvesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthEvolvesViewController.swift; sourceTree = "<group>"; };
 		AB3F8A6825246259006C86E8 /* EeveeEvolvesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EeveeEvolvesViewController.swift; sourceTree = "<group>"; };
+		AB3F8A6D25249C46006C86E8 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		AB781E3B2524C44C002BC5EC /* MovesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovesViewController.swift; sourceTree = "<group>"; };
 		AB9F74872520FAD9008D483A /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		AB9F748925215A7A008D483A /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		AB9F748B2522A491008D483A /* TypeSymbolCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSymbolCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -68,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB3F8A6C25249BA5006C86E8 /* MultiProgressView in Frameworks */,
 				ABB788022517DF5400671AB9 /* Alamofire in Frameworks */,
 				03662F3D19DC9FACD8A9A2D6 /* Pods_PokemonXYiOS.framework in Frameworks */,
 				ABEC26D325196C8C001E40B0 /* AlamofireImage in Frameworks */,
@@ -105,6 +111,8 @@
 				AB3F8A642523F4FD006C86E8 /* EvolvesBaseViewController.swift */,
 				AB3F8A662523F827006C86E8 /* ForthEvolvesViewController.swift */,
 				AB3F8A6825246259006C86E8 /* EeveeEvolvesViewController.swift */,
+				AB3F8A6D25249C46006C86E8 /* StatsViewController.swift */,
+				AB781E3B2524C44C002BC5EC /* MovesViewController.swift */,
 			);
 			path = PokedexViews;
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 				ABB788012517DF5400671AB9 /* Alamofire */,
 				ABEC26D225196C8C001E40B0 /* AlamofireImage */,
 				AB9F74852520CC35008D483A /* SwipeMenuViewController */,
+				AB3F8A6B25249BA5006C86E8 /* MultiProgressView */,
 			);
 			productName = PokemonXYiOS;
 			productReference = AB26B06D2517DD550030D44A /* PokemonXYiOS.app */;
@@ -237,6 +246,7 @@
 				ABB788002517DF5400671AB9 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				ABEC26D125196C8C001E40B0 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 				AB9F74842520CC35008D483A /* XCRemoteSwiftPackageReference "SwipeMenuViewController" */,
+				AB3F8A6A25249BA5006C86E8 /* XCRemoteSwiftPackageReference "MultiProgressView" */,
 			);
 			productRefGroup = AB26B06E2517DD550030D44A /* Products */;
 			projectDirPath = "";
@@ -320,10 +330,12 @@
 				AB3F8A612523B5B6006C86E8 /* NormalEvolveChainViewController.swift in Sources */,
 				AB1E4DDD2518118800287D29 /* PokemonListTableViewController.swift in Sources */,
 				ABB787FC2517DE8300671AB9 /* PokeBank.swift in Sources */,
+				AB781E3C2524C44C002BC5EC /* MovesViewController.swift in Sources */,
 				AB26B0752517DD550030D44A /* ViewController.swift in Sources */,
 				AB9F748F2522CB8B008D483A /* WeaknessTypeCollectionViewCell.swift in Sources */,
 				AB26B0712517DD550030D44A /* AppDelegate.swift in Sources */,
 				AB26B0732517DD550030D44A /* SceneDelegate.swift in Sources */,
+				AB3F8A6E25249C46006C86E8 /* StatsViewController.swift in Sources */,
 				AB3F8A6925246259006C86E8 /* EeveeEvolvesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +536,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AB3F8A6A25249BA5006C86E8 /* XCRemoteSwiftPackageReference "MultiProgressView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-gallagher/MultiProgressView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
 		AB9F74842520CC35008D483A /* XCRemoteSwiftPackageReference "SwipeMenuViewController" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/yysskk/SwipeMenuViewController";
@@ -551,6 +571,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AB3F8A6B25249BA5006C86E8 /* MultiProgressView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB3F8A6A25249BA5006C86E8 /* XCRemoteSwiftPackageReference "MultiProgressView" */;
+			productName = MultiProgressView;
+		};
 		AB9F74852520CC35008D483A /* SwipeMenuViewController */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AB9F74842520CC35008D483A /* XCRemoteSwiftPackageReference "SwipeMenuViewController" */;

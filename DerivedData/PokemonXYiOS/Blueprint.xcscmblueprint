@@ -4,17 +4,23 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86" : 0,
+    "D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64" : 0,
+    "C9337A12E14FA501F3C23AB07202C1DCED6555E4" : 0,
     "F6B413E3B4481725AEDE18157EE1C12FF0F3E891" : 0,
-    "9C69A00F156639A2C13D1B5E5B6A0B65FDC1E342" : 0,
-    "67620B5EFA902936DF04070AF595B76AB0333747" : 0
+    "95438028B10BBB846574013D29F154A00556A9D1" : 0,
+    "67620B5EFA902936DF04070AF595B76AB0333747" : 0,
+    "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86" : 0,
+    "9C69A00F156639A2C13D1B5E5B6A0B65FDC1E342" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D6C72F86-4C51-4D07-BDF1-5093B2D7B820",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86" : "PokemonXYiOS\/DerivedData\/PokemonXYiOS\/SourcePackages\/checkouts\/AlamofireImage\/",
+    "D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64" : "PokemonXYiOS\/DerivedData\/PokemonXYiOS\/SourcePackages\/checkouts\/Quick\/",
+    "C9337A12E14FA501F3C23AB07202C1DCED6555E4" : "PokemonXYiOS\/DerivedData\/PokemonXYiOS\/SourcePackages\/checkouts\/MultiProgressView\/",
     "F6B413E3B4481725AEDE18157EE1C12FF0F3E891" : "PokemonXYiOS\/",
-    "9C69A00F156639A2C13D1B5E5B6A0B65FDC1E342" : "PokemonXYiOS\/DerivedData\/PokemonXYiOS\/SourcePackages\/checkouts\/SwipeMenuViewController\/",
-    "67620B5EFA902936DF04070AF595B76AB0333747" : "PokemonXYiOS\/DerivedData\/PokemonXYiOS\/SourcePackages\/checkouts\/Alamofire\/"
+    "95438028B10BBB846574013D29F154A00556A9D1" : "PokemonXYiOS\/DerivedData\/PokemonXYiOS\/SourcePackages\/checkouts\/Nimble\/",
+    "67620B5EFA902936DF04070AF595B76AB0333747" : "PokemonXYiOS\/DerivedData\/PokemonXYiOS\/SourcePackages\/checkouts\/Alamofire\/",
+    "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86" : "PokemonXYiOS\/DerivedData\/PokemonXYiOS\/SourcePackages\/checkouts\/AlamofireImage\/",
+    "9C69A00F156639A2C13D1B5E5B6A0B65FDC1E342" : "PokemonXYiOS\/DerivedData\/PokemonXYiOS\/SourcePackages\/checkouts\/SwipeMenuViewController\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "PokemonXYiOS",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -26,9 +32,24 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67620B5EFA902936DF04070AF595B76AB0333747"
     },
     {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Quick\/Nimble",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "95438028B10BBB846574013D29F154A00556A9D1"
+    },
+    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yysskk\/SwipeMenuViewController",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9C69A00F156639A2C13D1B5E5B6A0B65FDC1E342"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mac-gallagher\/MultiProgressView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C9337A12E14FA501F3C23AB07202C1DCED6555E4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Quick\/Quick",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/AlamofireImage",

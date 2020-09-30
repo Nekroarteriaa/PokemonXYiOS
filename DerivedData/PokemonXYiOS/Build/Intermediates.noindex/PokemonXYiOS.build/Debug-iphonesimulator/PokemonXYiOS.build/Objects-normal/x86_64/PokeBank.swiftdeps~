@@ -7,10 +7,12 @@ provides-member:
 - ["12PokemonXYiOS8PokeBankC", ""]
 provides-dynamic-lookup:
 - "PokemonBank"
+- "getPokemon"
 - "getPokemonGifURL"
 - "getPokemonIDCardBackgroundColor"
 - "getPokemonTypeGradient"
 - "getPokemonTypeImage"
+- "getPokemonbyIDNumber"
 - "orderingEeveeEvolves"
 - "shared"
 depends-top-level:
@@ -62,6 +64,7 @@ depends-member:
 - !private ["Se", "count"]
 - !private ["Se", "id"]
 - !private ["Se", "isEmpty"]
+- !private ["Se", "name"]
 - !private ["Se", "pokemon_gifsrc"]
 - !private ["Se", "subscript"]
 - !private ["SE", "count"]
@@ -110,14 +113,17 @@ depends-member:
 - ["12PokemonXYiOS8PokeBankC", "UIColor"]
 - ["12PokemonXYiOS8PokeBankC", "UIImage"]
 - ["12PokemonXYiOS8PokeBankC", "deinit"]
+- ["12PokemonXYiOS8PokeBankC", "getPokemon"]
 - ["12PokemonXYiOS8PokeBankC", "getPokemonGifURL"]
 - ["12PokemonXYiOS8PokeBankC", "getPokemonIDCardBackgroundColor"]
 - ["12PokemonXYiOS8PokeBankC", "getPokemonTypeGradient"]
 - ["12PokemonXYiOS8PokeBankC", "getPokemonTypeImage"]
+- ["12PokemonXYiOS8PokeBankC", "getPokemonbyIDNumber"]
 - ["12PokemonXYiOS8PokeBankC", "init"]
 - ["12PokemonXYiOS8PokeBankC", "orderingEeveeEvolves"]
 - ["12PokemonXYiOS8PokeBankC", "shared"]
 - !private ["12PokemonXYiOS0A0V", "id"]
+- !private ["12PokemonXYiOS0A0V", "name"]
 - !private ["12PokemonXYiOS0A0V", "pokemon_gifsrc"]
 - !private ["12PokemonXYiOS0A6ObjectC", "pokemon"]
 - !private ["Sk", "count"]
@@ -261,4 +267,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "da0275ab136017086ec1403ec6f675fa"
+interface-hash: "7743e3cde8d604504d8eeb06a5f0ced6"

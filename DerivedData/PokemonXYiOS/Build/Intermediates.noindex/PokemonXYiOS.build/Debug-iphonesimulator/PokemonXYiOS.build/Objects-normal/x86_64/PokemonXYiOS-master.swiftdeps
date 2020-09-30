@@ -1,12 +1,12 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "821db0e9865046555e4a32891ca1ec25"
-build_time: [1601462180, 414211000]
+build_time: [1601473754, 836824000]
 inputs:
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/UIComponentsScripts/ContentViewController.swift": [1601255531, 893452009]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/Model/Pokemon.swift": [1601412233, 691242036]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/ForthEvolvesViewController.swift": [1601462175, 446565375]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/UIComponentsScripts/PokemonIDCardTableViewCell.swift": [1601202614, 232214074]
-  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/PokemonReviewViewController.swift": [1601461647, 49508236]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/PokemonReviewViewController.swift": [1601472833, 984683817]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/AboutViewController.swift": [1601461276, 981170364]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/UIComponentsScripts/TypeSymbolCollectionViewCell.swift": [1601344636, 453278860]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/UIComponentsScripts/PokemonEvolutionCollectionViewCell.swift": [1601458233, 419037913]
@@ -14,8 +14,10 @@ inputs:
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/NormalEvolveChainViewController.swift": [1601461613, 341299714]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/PokemonListTableViewController.swift": [1601121513, 751364231]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/Pokebank/PokeBank.swift": [1601457294, 47671022]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/MovesViewController.swift": [1601473740, 197342990]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/ViewController.swift": [1601179401, 661002984]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/UIComponentsScripts/WeaknessTypeCollectionViewCell.swift": [1601344896, 995559763]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/AppDelegate.swift": [1600628181, 825604439]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/SceneDelegate.swift": [1600628181, 836176872]
+  "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/StatsViewController.swift": [1601473443, 970023814]
   "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/PokemonXYiOS/PokedexViews/EeveeEvolvesViewController.swift": [1601452308, 835550194]

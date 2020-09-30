@@ -188,6 +188,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreGraphics;
 @import Foundation;
+@import MultiProgressView;
 @import UIKit;
 #endif
 
@@ -288,6 +289,14 @@ SWIFT_CLASS("_TtC12PokemonXYiOS26ForthEvolvesViewController")
 @end
 
 
+SWIFT_CLASS("_TtC12PokemonXYiOS19MovesViewController")
+@interface MovesViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC12PokemonXYiOS31NormalEvolveChainViewController")
 @interface NormalEvolveChainViewController : EvolvesBaseViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 - (void)viewDidLoad;
@@ -372,6 +381,29 @@ SWIFT_CLASS("_TtC12PokemonXYiOS13SceneDelegate")
 - (void)sceneWillEnterForeground:(UIScene * _Nonnull)scene;
 - (void)sceneDidEnterBackground:(UIScene * _Nonnull)scene;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class MultiProgressView;
+
+SWIFT_CLASS("_TtC12PokemonXYiOS19StatsViewController")
+@interface StatsViewController : UIViewController
+@property (nonatomic, weak) IBOutlet MultiProgressView * _Null_unspecified HPProgressBar;
+@property (nonatomic, weak) IBOutlet MultiProgressView * _Null_unspecified AttackProgressBar;
+@property (nonatomic, weak) IBOutlet MultiProgressView * _Null_unspecified DefenseProgressBar;
+@property (nonatomic, weak) IBOutlet MultiProgressView * _Null_unspecified SpecialAttackProgressBar;
+@property (nonatomic, weak) IBOutlet MultiProgressView * _Null_unspecified SpecialDefenseProgressBar;
+@property (nonatomic, weak) IBOutlet MultiProgressView * _Null_unspecified SpeedProgressBar;
+@property (nonatomic, weak) IBOutlet MultiProgressView * _Null_unspecified TotalProgressBar;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class ProgressViewSection;
+
+@interface StatsViewController (SWIFT_EXTENSION(PokemonXYiOS)) <MultiProgressViewDataSource>
+- (NSInteger)numberOfSectionsIn:(MultiProgressView * _Nonnull)progressView SWIFT_WARN_UNUSED_RESULT;
+- (ProgressViewSection * _Nonnull)progressView:(MultiProgressView * _Nonnull)progressView viewForSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

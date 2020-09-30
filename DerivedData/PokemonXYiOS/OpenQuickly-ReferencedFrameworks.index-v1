@@ -2,29 +2,44 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<string>Foundation</string>
-	<string>CoreData</string>
-	<string>AppKit</string>
-	<string>CCGradient</string>
-	<string>AlamofireImage</string>
-	<string>Dispatch</string>
-	<string>CoreGraphics</string>
-	<string>ZGIFImage</string>
-	<string>Alamofire</string>
-	<string>SwipeMenuViewController</string>
-	<string>SwiftUI</string>
-	<string>CoreServices</string>
-	<string>Combine</string>
-	<string>UIKit</string>
-	<string>CoreImage</string>
-	<string>SystemConfiguration</string>
-	<string>WatchKit</string>
-	<string>XCTest</string>
-	<string>MobileCoreServices</string>
-	<string>ImageIO</string>
-	<string>SwipeViewController</string>
+	<string>Darwin</string>
 	<string>Cocoa</string>
-	<string>PackageDescription</string>
+	<string>CCGradient</string>
+	<string>MultiProgressView</string>
+	<string>CDispatch</string>
+	<string>SwipeViewController</string>
 	<string>CommonCrypto</string>
+	<string>ImageIO</string>
+	<string>CwlCatchExceptionSupport</string>
+	<string>objc</string>
+	<string>NimbleCwlPreconditionTesting</string>
+	<string>SwipeMenuViewController</string>
+	<string>QuickObjCRuntime</string>
+	<string>CoreData</string>
+	<string>NimbleTests</string>
+	<string>CwlMachBadInstructionHandler</string>
+	<string>MobileCoreServices</string>
+	<string>CoreFoundation</string>
+	<string>AlamofireImage</string>
+	<string>CoreImage</string>
+	<string>Nimble</string>
+	<string>CoreServices</string>
+	<string>dispatch</string>
+	<string>SwiftUI</string>
+	<string>PackageDescription</string>
+	<string>Quick</string>
+	<string>XCTest</string>
+	<string>Dispatch</string>
+	<string>WatchKit</string>
+	<string>Foundation</string>
+	<string>mach</string>
+	<string>AppKit</string>
+	<string>Alamofire</string>
+	<string>QuickTests</string>
+	<string>Combine</string>
+	<string>ZGIFImage</string>
+	<string>SystemConfiguration</string>
+	<string>CoreGraphics</string>
+	<string>UIKit</string>
 </array>
 </plist>
