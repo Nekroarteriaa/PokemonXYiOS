@@ -15,6 +15,28 @@ class PokeBank{
     
     var PokemonBank: [PokemonObject] = []
     
+    func getPokemonGifURL(pokemonID: String) -> String
+    {
+        var gifURL : String = ""
+        
+        for pokemon in PokemonBank {
+            if gifURL.isEmpty
+            {
+                if pokemon.pokemon.id == pokemonID
+                {
+                    gifURL = pokemon.pokemon.pokemon_gifsrc
+                }
+            }
+            
+            else
+            {
+                break
+            }
+        }
+        
+        return gifURL
+    }
+    
    
     func getPokemonTypeImage(type: String)-> UIImage
     {

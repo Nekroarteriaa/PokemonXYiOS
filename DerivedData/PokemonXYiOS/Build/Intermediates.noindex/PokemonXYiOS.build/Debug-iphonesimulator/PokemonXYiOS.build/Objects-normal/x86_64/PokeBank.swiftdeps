@@ -7,12 +7,14 @@ provides-member:
 - ["12PokemonXYiOS8PokeBankC", ""]
 provides-dynamic-lookup:
 - "PokemonBank"
+- "getPokemonGifURL"
 - "getPokemonIDCardBackgroundColor"
 - "getPokemonTypeGradient"
 - "getPokemonTypeImage"
 - "shared"
 depends-top-level:
 - !private "+"
+- !private "=="
 - !private ">"
 - "AssignmentPrecedence"
 - !private "FloatLiteralType"
@@ -31,47 +33,75 @@ depends-member:
 - !private ["Sa", "count"]
 - !private ["Sa", "subscript"]
 - !private ["SK", "count"]
+- !private ["SK", "isEmpty"]
 - !private ["SK", "subscript"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEmpty"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["Sl", "count"]
+- !private ["Sl", "isEmpty"]
 - !private ["Sl", "subscript"]
+- !private ["SL", "isEmpty"]
 - !private ["10Foundation15ContiguousBytesP", "count"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "isEmpty"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["10Foundation12DataProtocolP", "count"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["Se", "count"]
+- !private ["Se", "id"]
+- !private ["Se", "isEmpty"]
+- !private ["Se", "pokemon_gifsrc"]
 - !private ["Se", "subscript"]
 - !private ["SE", "count"]
+- !private ["SE", "isEmpty"]
 - !private ["SE", "subscript"]
 - !private ["SQ", "count"]
 - !private ["SQ", "init"]
+- !private ["SQ", "isEmpty"]
 - !private ["SQ", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "isEmpty"]
+- !private ["s32ExpressibleByStringInterpolationP", "isEmpty"]
+- !private ["s26ExpressibleByStringLiteralP", "isEmpty"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "isEmpty"]
 - !private ["SH", "count"]
 - !private ["SH", "init"]
+- !private ["SH", "isEmpty"]
 - !private ["SH", "subscript"]
+- !private ["s25LosslessStringConvertibleP", "isEmpty"]
+- !private ["s10MirrorPathP", "isEmpty"]
 - !private ["SM", "count"]
 - !private ["SM", "subscript"]
 - !private ["10Foundation19MutableDataProtocolP", "count"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isEmpty"]
 - !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "isEmpty"]
 - !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "isEmpty"]
 - !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "isEmpty"]
+- !private ["So16NSMutableCopyingP", "isEmpty"]
 - !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isEmpty"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isEmpty"]
 - !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "isEmpty"]
+- !private ["So8NSStringC", "isEmpty"]
 - ["12PokemonXYiOS8PokeBankC", "PokeBank"]
 - ["12PokemonXYiOS8PokeBankC", "PokemonBank"]
 - ["12PokemonXYiOS8PokeBankC", "PokemonObject"]
@@ -79,34 +109,54 @@ depends-member:
 - ["12PokemonXYiOS8PokeBankC", "UIColor"]
 - ["12PokemonXYiOS8PokeBankC", "UIImage"]
 - ["12PokemonXYiOS8PokeBankC", "deinit"]
+- ["12PokemonXYiOS8PokeBankC", "getPokemonGifURL"]
 - ["12PokemonXYiOS8PokeBankC", "getPokemonIDCardBackgroundColor"]
 - ["12PokemonXYiOS8PokeBankC", "getPokemonTypeGradient"]
 - ["12PokemonXYiOS8PokeBankC", "getPokemonTypeImage"]
 - ["12PokemonXYiOS8PokeBankC", "init"]
 - ["12PokemonXYiOS8PokeBankC", "shared"]
+- !private ["12PokemonXYiOS0A0V", "id"]
+- !private ["12PokemonXYiOS0A0V", "pokemon_gifsrc"]
+- !private ["12PokemonXYiOS0A6ObjectC", "pokemon"]
 - !private ["Sk", "count"]
 - !private ["Sk", "subscript"]
 - !private ["Sm", "count"]
+- !private ["Sm", "isEmpty"]
 - !private ["Sm", "subscript"]
 - !private ["ST", "count"]
+- !private ["ST", "isEmpty"]
 - !private ["ST", "subscript"]
+- !private ["SS", "isEmpty"]
+- !private ["Sy", "isEmpty"]
+- !private ["s16TextOutputStreamP", "isEmpty"]
+- !private ["s20TextOutputStreamableP", "isEmpty"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So7UIColorC", "init"]
 - !private ["So7UIImageC", "init"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "isEmpty"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "isEmpty"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "isEmpty"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "isEmpty"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "isEmpty"]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "isEmpty"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isEmpty"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 depends-nominal:
 - !private "9Alamofire0A8ExtendedP"
@@ -114,6 +164,7 @@ depends-nominal:
 - !private "SK"
 - !private "s7CVarArgP"
 - !private "Sl"
+- !private "SL"
 - !private "10Foundation15ContiguousBytesP"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -123,26 +174,45 @@ depends-nominal:
 - !private "SE"
 - !private "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
 - "12PokemonXYiOS8PokeBankC"
+- !private "12PokemonXYiOS0A0V"
+- !private "12PokemonXYiOS0A6ObjectC"
 - !private "Sk"
 - !private "Sm"
 - !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So7UIColorC"
 - !private "So7UIImageC"
 - !private "So39UIItemProviderPresentationSizeProvidingP"
+- !private "9Alamofire14URLConvertibleP"
 - !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s26_ExpressibleByImageLiteralP"
 - !private "s19_HasContiguousBytesP"
@@ -168,6 +238,7 @@ depends-external:
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/AlamofireImage.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/Alamofire.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/SwipeMenuViewController.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/CCGradient/CCGradient.framework/Modules/CCGradient.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/ZGIFImage/ZGIFImage.framework/Headers/ZGIFImage-umbrella.h"
 - "/Users/olafgomez/Documents/PracticasCice/PokedexXYiOS/PokemonXYiOS/DerivedData/PokemonXYiOS/Build/Products/Debug-iphonesimulator/CCGradient/CCGradient.framework/Headers/CCGradient-umbrella.h"
@@ -188,4 +259,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "45d8313c25c610457d98d114b1e711e9"
+interface-hash: "745015407c6db43fdd4b6d90f2f7b2a9"

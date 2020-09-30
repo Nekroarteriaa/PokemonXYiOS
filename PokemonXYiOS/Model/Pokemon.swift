@@ -145,6 +145,7 @@ class PokemonObject
     var pokemon : Pokemon
     var delegate: FetchedPokemon?
     var pokemon_UIGif: UIImage?
+    var pokemon_EvolvesUIGif: [UIImage] = []
     
     init(pokemon:Pokemon) {
         self.pokemon = pokemon
@@ -178,7 +179,21 @@ class PokemonObject
         if let url = URL(string: self.pokemon.pokemon_gifsrc) {
             let urlImage = ZGIFImage.image(url: url)
             self.pokemon_UIGif = urlImage
-            self.delegate?.OnFinishedLoading()
+        }
+    }
+    
+    func fetchEvolvesGif(evolvesList: [String])
+    {
+        for pokeID in evolvesList {
+            
+            let evolutionGifURL = PokeBank.shared.getPokemonGifURL(pokemonID: pokeID)
+            
+            if let url = URL(string: evolutionGifURL)
+            {
+                let urlImage = ZGIFImage.image(url: url)
+                
+                pokemon_EvolvesUIGif.append(urlImage!)
+            }
         }
     }
 }

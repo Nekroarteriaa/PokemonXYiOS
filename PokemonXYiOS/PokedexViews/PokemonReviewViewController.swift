@@ -28,13 +28,20 @@ class PokemonReviewViewController: UIViewController {
     var about: AboutViewController = {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
-        var viewController = storyboard.instantiateViewController(identifier: "PokemonAboutView") as! AboutViewController
+        var aboutViewController = storyboard.instantiateViewController(identifier: "PokemonAboutView") as! AboutViewController
         
-        return viewController
+        return aboutViewController
     }()
     
+    var evolves: EvolvesBaseViewController? /*= {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        var evolvesViewController = storyboard.instantiateViewController(identifier: "PokemonEvolvesView") as! NormalEvolveChainViewController
+        
+        return evolvesViewController
+    }()*/
     
-    let vc2 = ContentViewController()
+    
     let vc3 = ContentViewController()
     let vc4 = ContentViewController()
     
@@ -46,8 +53,44 @@ class PokemonReviewViewController: UIViewController {
         let vc = self.about
         vc.selectedPokemon = desiredPokemon
         
+        var vc2 : EvolvesBaseViewController?
+        
+        if desiredPokemon!.pokemon.evolutions.count > 3
+        {
+            if desiredPokemon!.pokemon.evolutions.count > 4
+            {
+                
+            }
+            
+            else
+            {
+                self.evolves = {
+                    let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                    
+                    let evolvesViewController = storyboard.instantiateViewController(identifier: "PokemonForthEvolvesView") as! ForthEvolvesViewController
+                    
+                    return evolvesViewController
+                }()
+            }
+        }
+        
+        else
+        {
+            self.evolves = {
+                let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                
+                let evolvesViewController = storyboard.instantiateViewController(identifier: "PokemonNormalEvolvesView") as! NormalEvolveChainViewController
+                
+                return evolvesViewController
+            }()
+            
+        }
+        
+        vc2 = self.evolves
+        vc2!.selectedPokemon = desiredPokemon
+        
         views.append(vc)
-        views.append(vc2)
+        views.append(vc2!)
         views.append(vc3)
         views.append(vc4)
         
@@ -86,6 +129,9 @@ class PokemonReviewViewController: UIViewController {
     {
         desiredPokemon?.fetchPokemonGif()
         pokemonIDImageProfile.image = desiredPokemon?.pokemon_UIGif!
+        
+        desiredPokemon?.fetchEvolvesGif(evolvesList: desiredPokemon!.pokemon.evolutions)
+        
         
         pokemonIDNumberLabel.text  = desiredPokemon?.pokemon.id
         pokemonNameLabel.text = desiredPokemon?.pokemon.name
@@ -131,17 +177,6 @@ class PokemonReviewViewController: UIViewController {
         */
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 
@@ -188,7 +223,7 @@ extension PokemonReviewViewController: SwipeMenuViewDelegate {
         
         switch toIndex {
         case 1:
-            vc2.view.backgroundColor = UIColor.green
+            return
         case 2:
             vc3.view.backgroundColor = UIColor.red
         case 3:
